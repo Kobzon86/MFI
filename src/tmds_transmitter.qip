@@ -1,0 +1,6 @@
+set_instance_assignment -name PLL_COMPENSATION_MODE DIRECT -to "*tmds_transmitter*|altera_pll:lvds_sdr_cyclone_v_pll_i*|*"
+set_instance_assignment -name UNFORCE_MERGE_PLL_OUTPUT_COUNTER ON -to "*tmds_transmitter*|altera_pll:lvds_sdr_cyclone_v_pll_i*|*"
+
+set_global_assignment -library "tmds_transmitter" -name SDC_FILE [file join $::quartus(qip_path) "tmds_transmitter.sdc"]
+set_global_assignment -library "tmds_transmitter" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "tmds_encoder_dvi.sv"]
+set_global_assignment -library "tmds_transmitter" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "tmds_transmitter.sv"]

@@ -1,0 +1,4 @@
+set_global_assignment -library "lvds_receiver" -name SDC_FILE [file join $::quartus(qip_path) "lvds_receiver.sdc"]
+set_global_assignment -library "lvds_receiver" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "lvds_receiver.sv"]
+set_global_assignment -library "lvds_receiver" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "lvds_serial_shift.sv"]
+set_global_assignment -library "lvds_receiver" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "lvds_ldi_dps.sv"]

@@ -1,0 +1,34 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+
+
+PACKAGE rk_pkg IS
+	CONSTANT CLK_FREQ_HZ           : INTEGER := 1600000;	
+	
+	CONSTANT RK_IN_STATE_REG_ADDR  : INTEGER := 0;
+	CONSTANT RK_OUT_STATE_REG_ADDR : INTEGER := 1;
+	CONSTANT RK_INTMASK_REG_ADDR   : INTEGER := 2;
+	CONSTANT RK_INTFLAG_REG_ADDR   : INTEGER := 3;
+	
+	---------- RK_OUT_REGISTER BIT MAPPING ------------------
+	CONSTANT TEST_EN_BIT           : INTEGER := 9; 
+	CONSTANT VWET_BIT              : INTEGER := 8;
+	CONSTANT THS_BIT               : INTEGER := 7;
+	CONSTANT SENSE_BIT             : INTEGER := 6;
+	CONSTANT IN_SET_BIT            : INTEGER := 5;
+	CONSTANT RK_OUT_27V0V          : INTEGER := 4; -- Bit number for powerfull RK OUT
+	
+	------------- RK OUTs update timer value ------------
+	CONSTANT AvClkIN_Div  : STD_LOGIC_VECTOR( 19 DOWNTO 0 ) :=  STD_LOGIC_VECTOR( TO_UNSIGNED( ( 62 ) , 20 ) ); -- 1.6 MHz
+--	CONSTANT Period  : STD_LOGIC_VECTOR( 19 DOWNTO 0 ) :=  STD_LOGIC_VECTOR( TO_UNSIGNED( ( CLK_FREQ_HZ / 40 ) , 20 ) ); -- 25 ms
+--	CONSTANT Period  : STD_LOGIC_VECTOR( 19 DOWNTO 0 ) :=  STD_LOGIC_VECTOR( TO_UNSIGNED( ( 1 ) , 20 ) ); -- 1 tick
+	CONSTANT Period  : STD_LOGIC_VECTOR( 19 DOWNTO 0 ) :=  STD_LOGIC_VECTOR( TO_UNSIGNED( ( 1600 ) , 20 ) ); -- 1 ms	
+
+
+	------------- RK Out turn-off timer value in 10 us pulses-------------------- 
+	CONSTANT RK_OFF_Timeout : STD_LOGIC_VECTOR( 19 DOWNTO 0 ) := STD_LOGIC_VECTOR( TO_UNSIGNED( ( CLK_FREQ_HZ / 2 ), 20 ) ); -- 0.5 s FOR SYNTHESIS
+--	CONSTANT RK_OFF_Timeout : STD_LOGIC_VECTOR( 19 DOWNTO 0 ) := STD_LOGIC_VECTOR( TO_UNSIGNED( 217, 20 ) ); -- 0.217 ms FOR TEST ONLY
+	
+
+END rk_pkg;

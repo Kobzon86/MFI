@@ -1,0 +1,974 @@
+ -- Copyright (C) 2019  Intel Corporation. All rights reserved.
+ -- Your use of Intel Corporation's design tools, logic functions 
+ -- and other software and tools, and any partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Intel Program License 
+ -- Subscription Agreement, the Intel Quartus Prime License Agreement,
+ -- the Intel FPGA IP License Agreement, or other applicable license
+ -- agreement, including, without limitation, that your use is for
+ -- the sole purpose of programming logic devices manufactured by
+ -- Intel and sold by Intel or its authorized distributors.  Please
+ -- refer to the applicable agreement for further details, at
+ -- https://fpgasoftware.intel.com/eula.
+ -- 
+ -- This is a Quartus Prime output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus Prime input file. This file cannot be used
+ -- to make Quartus Prime pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus Prime help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCPGM        : Dedicated power pin for configuration, which MUST be connected to 1.8V, 2.5V, 3.0V or 3.3V depending on the requirements of the configuration device.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.1V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --                  Bank 3A:       2.5V
+ --                  Bank 3B:       1.35V
+ --                  Bank 4A:       1.35V
+ --                  Bank 5A:       2.5V
+ --                  Bank 5B:       2.5V
+ --                  Bank 6A:       2.5V
+ --                  Bank 7A:  1.35V
+ --                  Bank 8A:  1.35V
+ --                  Bank 9A:  Dedicated configuration pins only, no VCCIO required.
+ -- RREF          : External reference resistor for the quad, MUST be connected to
+ --                 GND via a 2k Ohm resistor.
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --                  It can also be used to report unused dedicated pins. The connection
+ --                  on the board for unused dedicated pins depends on whether this will
+ --                  be used in a future design. One example is device migration. When
+ --                  using device migration, refer to the device pin-tables. If it is a
+ --                  GND pin in the pin table or if it will not be used in a future design
+ --                  for another purpose the it MUST be connected to GND. If it is an unused
+ --                  dedicated pin, then it can be connected to a valid signal on the board
+ --                  (low, high, or toggling) if that signal is required for a different
+ --                  revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --                  This pin should be connected to GND. It may also be connected  to a
+ --                  valid signal  on the board  (low, high, or toggling)  if that signal
+ --                  is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin.   For transceiver I/O banks, connect each pin marked GND*
+ --                  either individually through a 10k Ohm resistor to GND or tie all pins
+ --                  together and connect through a single 10k Ohm resistor to GND.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ -- GXB_NC        : Unused GXB Transmitter or dedicated clock output pin. This pin
+ --                 must not be connected.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Standard Edition
+CHIP  "mfd15"  ASSIGNED TO AN: 5CGXFC7D6F31I7
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+RESERVED_INPUT_WITH_WEAK_PULLUP : A2        :        :                   :         : 8A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A3        :        :                   :         : 8A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A4        :        :                   :         : 8A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A5        :        :                   :         : 8A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A6        :        :                   :         : 8A        :                
+VCCIO8A                      : A7        : power  :                   : 1.35V   : 8A        :                
+ddr_top_addr[11]             : A8        : output : SSTL-135          :         : 8A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A9        :        :                   :         : 8A        :                
+ddr_top_ba[0]                : A10       : output : SSTL-135          :         : 8A        : Y              
+ddr_top_addr[1]              : A11       : output : SSTL-135          :         : 8A        : Y              
+GND                          : A12       : gnd    :                   :         :           :                
+ddr_top_dq[3]                : A13       : bidir  : SSTL-135          :         : 7A        : Y              
+ddr_top_dq[7]                : A14       : bidir  : SSTL-135          :         : 7A        : Y              
+pcie_prsnt                   : A15       : output : SSTL-135          :         : 7A        : Y              
+ddr_top_dq[10]               : A16       : bidir  : SSTL-135          :         : 7A        : Y              
+GND                          : A17       : gnd    :                   :         :           :                
+ddr_top_cke                  : A18       : output : SSTL-135          :         : 7A        : Y              
+ddr_top_dq[15]               : A19       : bidir  : SSTL-135          :         : 7A        : Y              
+a429_rx_n[14]                : A20       : input  : SSTL-135          :         : 7A        : Y              
+a429_rx_p[14]                : A21       : input  : SSTL-135          :         : 7A        : Y              
+VCCIO7A                      : A22       : power  :                   : 1.35V   : 7A        :                
+a429_rx_n[11]                : A23       : input  : SSTL-135          :         : 7A        : Y              
+a429_rx_p[11]                : A24       : input  : SSTL-135          :         : 7A        : Y              
+a429_tx_n[2]                 : A25       : output : SSTL-135          :         : 7A        : Y              
+a429_tx_p[2]                 : A26       : output : SSTL-135          :         : 7A        : Y              
+GND                          : A27       : gnd    :                   :         :           :                
+a429_tx_p[3]                 : A28       : output : SSTL-135          :         : 7A        : Y              
+a429_tx_slp[3]               : A29       : output : 2.5 V             :         : 6A        : Y              
+GND                          : AA1       :        :                   :         : B1L       :                
+GND                          : AA2       :        :                   :         : B1L       :                
+GND                          : AA3       : gnd    :                   :         :           :                
+GND                          : AA4       : gnd    :                   :         :           :                
+VCCE_GXBL                    : AA5       : power  :                   : 1.1V    :           :                
+GND                          : AA6       : gnd    :                   :         :           :                
+nCSO, DATA4                  : AA7       :        :                   :         : 3A        :                
+lcd_bklt_dim                 : AA8       : output : 2.5 V             :         : 3A        : Y              
+lvds_lcd_data_p[0]           : AA9       : output : LVDS              :         : 3A        : Y              
+lvds_lcd_data_p[1](n)        : AA10      : output : LVDS              :         : 3A        : N              
+lcd_bklt_flt                 : AA11      : input  : 2.5 V             :         : 3A        : Y              
+VCCIO3B                      : AA12      : power  :                   : 1.35V   : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA13      :        :                   :         : 3B        :                
+ddr_bot_ck_n                 : AA14      : output : Differential 1.35-V SSTL :         : 3B        : Y              
+lvds_imx6_clk_p(n)           : AA15      : input  : LVDS              :         : 3B        : N              
+ddr_bot_dqs_n[0]             : AA16      : bidir  : Differential 1.35-V SSTL :         : 4A        : Y              
+GND                          : AA17      : gnd    :                   :         :           :                
+av_tx_blue[0]                : AA18      : output : SSTL-135          :         : 4A        : Y              
+av_tx_blue[1]                : AA19      : output : SSTL-135          :         : 4A        : Y              
+av_tx_blue[2]                : AA20      : output : SSTL-135          :         : 4A        : Y              
+av_tx_blue[3]                : AA21      : output : SSTL-135          :         : 4A        : Y              
+VCCIO5A                      : AA22      : power  :                   : 2.5V    : 5A        :                
+lvds_rx0_data_p[1](n)        : AA23      : input  : LVDS              :         : 5A        : N              
+lvds_rx0_data_p[2]           : AA24      : input  : LVDS              :         : 5A        : Y              
+lvds_rx0_data_p[2](n)        : AA25      : input  : LVDS              :         : 5A        : N              
+av_rx1_data[6]               : AA26      : input  : 2.5 V             :         : 5A        : Y              
+GND                          : AA27      : gnd    :                   :         :           :                
+lvds_rx0_data_p[4]           : AA28      : input  : LVDS              :         : 5B        : Y              
+lvds_rx0_data_p[5]           : AA29      : input  : LVDS              :         : 5B        : Y              
+lvds_rx0_data_p[5](n)        : AA30      : input  : LVDS              :         : 5B        : N              
+GND                          : AB1       : gnd    :                   :         :           :                
+GND                          : AB2       : gnd    :                   :         :           :                
+GXB_NC                       : AB3       :        :                   :         : B0L       :                
+GXB_NC                       : AB4       :        :                   :         : B0L       :                
+GND                          : AB5       : gnd    :                   :         :           :                
+VCCH_GXBL                    : AB6       : power  :                   : 2.5V    :           :                
+AS_DATA3, DATA3              : AB7       :        :                   :         : 3A        :                
+lcd_bklt_en[0]               : AB8       : output : 2.5 V             :         : 3A        : Y              
+lvds_lcd_data_p[0](n)        : AB9       : output : LVDS              :         : 3A        : N              
+GND                          : AB10      : gnd    :                   :         :           :                
+VCCPD3A                      : AB11      : power  :                   : 2.5V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB12      :        :                   :         : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB13      :        :                   :         : 3B        :                
+si5332_clk0_p                : AB14      : input  : LVDS              :         : 3B        : Y              
+VCCIO4A                      : AB15      : power  :                   : 1.35V   : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB16      :        :                   :         : 4A        :                
+lvds_rx0_clk_p[0]            : AB17      : input  : LVDS              :         : 4A        : Y              
+lvds_rx0_clk_p[0](n)         : AB18      : input  : LVDS              :         : 4A        : N              
+av_tx_clk                    : AB19      : output : SSTL-135          :         : 4A        : Y              
+GND                          : AB20      : gnd    :                   :         :           :                
+av_tx_blue[4]                : AB21      : output : SSTL-135          :         : 4A        : Y              
+av_tx_blue[5]                : AB22      : output : SSTL-135          :         : 4A        : Y              
+VCCA_FPLL                    : AB23      : power  :                   : 2.5V    :           :                
+VCCPGM                       : AB24      : power  :                   : 3.0V/3.3V :           :                
+VCCIO5A                      : AB25      : power  :                   : 2.5V    : 5A        :                
+av_rx1_data[4]               : AB26      : input  : 2.5 V             :         : 5A        : Y              
+av_rx1_data[3]               : AB27      : input  : 2.5 V             :         : 5B        : Y              
+av_rx1_data[2]               : AB28      : input  : 2.5 V             :         : 5B        : Y              
+av_rx1_data[1]               : AB29      : input  : 2.5 V             :         : 5B        : Y              
+GND                          : AB30      : gnd    :                   :         :           :                
+GND                          : AC1       :        :                   :         : B0L       :                
+GND                          : AC2       :        :                   :         : B0L       :                
+GND                          : AC3       : gnd    :                   :         :           :                
+GND                          : AC4       : gnd    :                   :         :           :                
+VCCL_GXBL                    : AC5       : power  :                   : 1.1V    :           :                
+GND                          : AC6       : gnd    :                   :         :           :                
+altera_reserved_tck          : AC7       : input  : 2.5 V             :         : 3A        : N              
+VCCIO3A                      : AC8       : power  :                   : 2.5V    : 3A        :                
+lvds_lcd_data_p[3]           : AC9       : output : LVDS              :         : 3A        : Y              
+VCC_AUX                      : AC10      : power  :                   : 2.5V    :           :                
+VCCPGM                       : AC11      : power  :                   : 3.0V/3.3V :           :                
+VCCPD3B4A                    : AC12      : power  :                   : 2.5V    : 3B, 4A    :                
+GND                          : AC13      : gnd    :                   :         :           :                
+si5332_clk0_p(n)             : AC14      : input  : LVDS              :         : 3B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC15      :        :                   :         : 4A        :                
+VCC_AUX                      : AC16      : power  :                   : 2.5V    :           :                
+VCCPD3B4A                    : AC17      : power  :                   : 2.5V    : 3B, 4A    :                
+VCCIO4A                      : AC18      : power  :                   : 1.35V   : 4A        :                
+av_tx_green[0]               : AC19      : output : SSTL-135          :         : 4A        : Y              
+VCCPD3B4A                    : AC20      : power  :                   : 2.5V    : 3B, 4A    :                
+av_tx_blue[6]                : AC21      : output : SSTL-135          :         : 4A        : Y              
+av_tx_blue[7]                : AC22      : output : SSTL-135          :         : 4A        : Y              
+GND                          : AC23      : gnd    :                   :         :           :                
+milstd_addr[0]               : AC24      : input  : 2.5 V             :         : 5A        : Y              
+VREFB5AN0                    : AC25      : power  :                   :         : 5A        :                
+av_rx1_fb                    : AC26      : output : 2.5 V             :         : 5A        : Y              
+av_rx1_llc                   : AC27      : input  : 2.5 V             :         : 5A        : Y              
+VCCIO5B                      : AC28      : power  :                   : 2.5V    : 5B        :                
+av_rx1_data[0]               : AC29      : input  : 2.5 V             :         : 5B        : Y              
+adv7613_reset                : AC30      : output : 2.5 V             :         : 5B        : Y              
+GND                          : AD1       : gnd    :                   :         :           :                
+GND                          : AD2       : gnd    :                   :         :           :                
+GXB_NC                       : AD3       :        :                   :         : B0L       :                
+GXB_NC                       : AD4       :        :                   :         : B0L       :                
+GND                          : AD5       : gnd    :                   :         :           :                
+VCCE_GXBL                    : AD6       : power  :                   : 1.1V    :           :                
+GND                          : AD7       : gnd    :                   :         :           :                
+DNU                          : AD8       :        :                   :         :           :                
+lvds_lcd_data_p[3](n)        : AD9       : output : LVDS              :         : 3A        : N              
+VCCPD3A                      : AD10      : power  :                   : 2.5V    : 3A        :                
+VCCIO3A                      : AD11      : power  :                   : 2.5V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD12      :        :                   :         : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD13      :        :                   :         : 3B        :                
+DNU                          : AD14      :        :                   :         :           :                
+VCCPD3B4A                    : AD15      : power  :                   : 2.5V    : 3B, 4A    :                
+GND                          : AD16      : gnd    :                   :         :           :                
+ddr_bot_dq[5]                : AD17      : bidir  : SSTL-135          :         : 4A        : Y              
+av_tx_green[1]               : AD18      : output : SSTL-135          :         : 4A        : Y              
+av_tx_green[2]               : AD19      : output : SSTL-135          :         : 4A        : Y              
+av_tx_green[3]               : AD20      : output : SSTL-135          :         : 4A        : Y              
+VCCIO4A                      : AD21      : power  :                   : 1.35V   : 4A        :                
+VCC_AUX                      : AD22      : power  :                   : 2.5V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD23      :        :                   :         : 5A        :                
+pu_interrupt                 : AD24      : input  : 2.5 V             :         : 5A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD25      :        :                   :         : 5A        :                
+GND                          : AD26      : gnd    :                   :         :           :                
+lvds_rx0_data_p[0](n)        : AD27      : input  : LVDS              :         : 5A        : N              
+adv7613_cs1                  : AD28      : output : 2.5 V             :         : 5B        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD29      :        :                   :         : 5B        :                
+adv7613_int                  : AD30      : input  : 2.5 V             :         : 5B        : Y              
+GND                          : AE1       :        :                   :         : B0L       :                
+GND                          : AE2       :        :                   :         : B0L       :                
+GND                          : AE3       : gnd    :                   :         :           :                
+GND                          : AE4       : gnd    :                   :         :           :                
+AS_DATA1, DATA1              : AE5       :        :                   :         : 3A        :                
+GND                          : AE6       : gnd    :                   :         :           :                
+AS_DATA2, DATA2              : AE7       :        :                   :         : 3A        :                
+VREFB3AN0                    : AE8       : power  :                   :         : 3A        :                
+GND                          : AE9       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE10      :        :                   :         : 3B        :                
+VCCPD3B4A                    : AE11      : power  :                   : 2.5V    : 3B, 4A    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE12      :        :                   :         : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE13      :        :                   :         : 3B        :                
+VCCIO3B                      : AE14      : power  :                   : 1.35V   : 3B        :                
+ddr_bot_dm[0]                : AE15      : output : SSTL-135          :         : 4A        : Y              
+ddr_bot_dq[1]                : AE16      : bidir  : SSTL-135          :         : 4A        : Y              
+ddr_bot_dq[4]                : AE17      : bidir  : SSTL-135          :         : 4A        : Y              
+av_tx_green[4]               : AE18      : output : SSTL-135          :         : 4A        : Y              
+GND                          : AE19      : gnd    :                   :         :           :                
+av_tx_green[5]               : AE20      : output : SSTL-135          :         : 4A        : Y              
+VCCPD3B4A                    : AE21      : power  :                   : 2.5V    : 3B, 4A    :                
+av_tx_green[6]               : AE22      : output : SSTL-135          :         : 4A        : Y              
+milstd_addr[4]               : AE23      : input  : 2.5 V             :         : 5A        : Y              
+VCCIO5A                      : AE24      : power  :                   : 2.5V    : 5A        :                
+milstd_addr[1]               : AE25      : input  : 2.5 V             :         : 5A        : Y              
+a429_tx_slp[5]               : AE26      : output : 2.5 V             :         : 5A        : Y              
+lvds_rx0_data_p[0]           : AE27      : input  : LVDS              :         : 5A        : Y              
+heater_sens                  : AE28      : input  : 2.5 V             :         : 5B        : Y              
+GND                          : AE29      : gnd    :                   :         :           :                
+tmds171_oe                   : AE30      : output : 2.5 V             :         : 5B        : Y              
+GND                          : AF1       : gnd    :                   :         :           :                
+GND                          : AF2       : gnd    :                   :         :           :                
+pcie_tx_p(n)                 : AF3       : output : 1.5-V PCML        :         : B0L       : N              
+pcie_tx_p                    : AF4       : output : 1.5-V PCML        :         : B0L       : Y              
+GND                          : AF5       : gnd    :                   :         :           :                
+lvds_lcd_clk_p(n)            : AF6       : output : LVDS              :         : 3A        : N              
+lvds_lcd_clk_p               : AF7       : output : LVDS              :         : 3A        : Y              
+lvds_lcd_data_p[2]           : AF8       : output : LVDS              :         : 3A        : Y              
+ddr_bot_cas_n                : AF9       : output : SSTL-135          :         : 3B        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF10      :        :                   :         : 3B        :                
+ddr_bot_addr[8]              : AF11      : output : SSTL-135          :         : 3B        : Y              
+GND                          : AF12      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF13      :        :                   :         : 3B        :                
+ddr_bot_dq[7]                : AF14      : bidir  : SSTL-135          :         : 4A        : Y              
+ddr_bot_dq[0]                : AF15      : bidir  : SSTL-135          :         : 4A        : Y              
+ddr_bot_dq[13]               : AF16      : bidir  : SSTL-135          :         : 4A        : Y              
+VCCIO4A                      : AF17      : power  :                   : 1.35V   : 4A        :                
+av_tx_green[7]               : AF18      : output : SSTL-135          :         : 4A        : Y              
+av_tx_red[0]                 : AF19      : output : SSTL-135          :         : 4A        : Y              
+av_tx_red[1]                 : AF20      : output : SSTL-135          :         : 4A        : Y              
+av_tx_red[2]                 : AF21      : output : SSTL-135          :         : 4A        : Y              
+GND                          : AF22      : gnd    :                   :         :           :                
+adv7123_psave_n              : AF23      : output : SSTL-135          :         : 4A        : Y              
+milstd_addr[3]               : AF24      : input  : 2.5 V             :         : 5A        : Y              
+milstd_addr[2]               : AF25      : input  : 2.5 V             :         : 5A        : Y              
+a429_tx_slp[4]               : AF26      : output : 2.5 V             :         : 5A        : Y              
+VCCIO5A                      : AF27      : power  :                   : 2.5V    : 5A        :                
+tmds_tx_clk_p(n)             : AF28      : output : LVDS              :         : 5B        : N              
+tmds_tx_data_p[0]            : AF29      : output : LVDS              :         : 5B        : Y              
+tmds_tx_data_p[0](n)         : AF30      : output : LVDS              :         : 5B        : N              
+pcie_rx_p(n)                 : AG1       : input  : 1.5-V PCML        :         : B0L       : N              
+pcie_rx_p                    : AG2       : input  : 1.5-V PCML        :         : B0L       : Y              
+GND                          : AG3       : gnd    :                   :         :           :                
+GND                          : AG4       : gnd    :                   :         :           :                
+AS_DATA0, ASDO, DATA0        : AG5       :        :                   :         : 3A        :                
+lvds_lcd_scan                : AG6       : output : 2.5 V             :         : 3A        : Y              
+out3_en_n                    : AG7       : output : 2.5 V             :         : 3A        : Y              
+lvds_lcd_data_p[2](n)        : AG8       : output : LVDS              :         : 3A        : N              
+ddr_bot_ras_n                : AG9       : output : SSTL-135          :         : 3B        : Y              
+VCCIO3B                      : AG10      : power  :                   : 1.35V   : 3B        :                
+ddr_bot_addr[9]              : AG11      : output : SSTL-135          :         : 3B        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG12      :        :                   :         : 3B        :                
+ddr_bot_addr[4]              : AG13      : output : SSTL-135          :         : 3B        : Y              
+ddr_bot_addr[5]              : AG14      : output : SSTL-135          :         : 3B        : Y              
+GND                          : AG15      : gnd    :                   :         :           :                
+ddr_bot_dq[12]               : AG16      : bidir  : SSTL-135          :         : 4A        : Y              
+ddr_bot_dq[10]               : AG17      : bidir  : SSTL-135          :         : 4A        : Y              
+av_tx_red[3]                 : AG18      : output : SSTL-135          :         : 4A        : Y              
+av_tx_red[4]                 : AG19      : output : SSTL-135          :         : 4A        : Y              
+VCCIO4A                      : AG20      : power  :                   : 1.35V   : 4A        :                
+av_tx_red[5]                 : AG21      : output : SSTL-135          :         : 4A        : Y              
+av_tx_red[6]                 : AG22      : output : SSTL-135          :         : 4A        : Y              
+av_tx_red[7]                 : AG23      : output : SSTL-135          :         : 4A        : Y              
+av_tx_sync_n                 : AG24      : output : SSTL-135          :         : 4A        : Y              
+GND                          : AG25      : gnd    :                   :         :           :                
+rk_in[3]                     : AG26      : input  : SSTL-135          :         : 4A        : Y              
+heater_i2c_sda               : AG27      : bidir  : 2.5 V             :         : 5A        : Y              
+tmds_tx_clk_p                : AG28      : output : LVDS              :         : 5B        : Y              
+tmds_tx_data_p[1](n)         : AG29      : output : LVDS              :         : 5B        : N              
+VCCIO5B                      : AG30      : power  :                   : 2.5V    : 5B        :                
+GND                          : AH1       : gnd    :                   :         :           :                
+GND                          : AH2       : gnd    :                   :         :           :                
+GND                          : AH3       : gnd    :                   :         :           :                
+pcie_ckreq                   : AH4       : output : 2.5 V             :         : 3A        : Y              
+btn_bklt_pwm                 : AH5       : output : 2.5 V             :         : 3A        : Y              
+lvds_lcd_mode                : AH6       : output : 2.5 V             :         : 3A        : Y              
+out1_en_n                    : AH7       : output : 2.5 V             :         : 3A        : Y              
+GND                          : AH8       : gnd    :                   :         :           :                
+ddr_bot_ba[0]                : AH9       : output : SSTL-135          :         : 3B        : Y              
+ddr_bot_ba[1]                : AH10      : output : SSTL-135          :         : 3B        : Y              
+ddr_bot_addr[2]              : AH11      : output : SSTL-135          :         : 3B        : Y              
+ddr_bot_addr[3]              : AH12      : output : SSTL-135          :         : 3B        : Y              
+VCCIO3B                      : AH13      : power  :                   : 1.35V   : 3B        :                
+ddr_bot_odt                  : AH14      : output : SSTL-135          :         : 4A        : Y              
+ddr_bot_dq[3]                : AH15      : bidir  : SSTL-135          :         : 4A        : Y              
+VREFB4AN0                    : AH16      : power  :                   : 0.675V  : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH17      :        :                   :         : 4A        :                
+GND                          : AH18      : gnd    :                   :         :           :                
+ddr_bot_dm[1]                : AH19      : output : SSTL-135          :         : 4A        : Y              
+ddr_bot_dq[15]               : AH20      : bidir  : SSTL-135          :         : 4A        : Y              
+rk_out_en                    : AH21      : output : SSTL-135          :         : 4A        : Y              
+rk_out[2]                    : AH22      : output : SSTL-135          :         : 4A        : Y              
+VCCIO4A                      : AH23      : power  :                   : 1.35V   : 4A        :                
+rk_fault[2]                  : AH24      : input  : SSTL-135          :         : 4A        : Y              
+rk_in[7]                     : AH25      : input  : SSTL-135          :         : 4A        : Y              
+rk_in[4]                     : AH26      : input  : SSTL-135          :         : 4A        : Y              
+heater_i2c_scl               : AH27      : bidir  : 2.5 V             :         : 5A        : Y              
+GND                          : AH28      : gnd    :                   :         :           :                
+tmds_tx_data_p[1]            : AH29      : output : LVDS              :         : 5B        : Y              
+tmds_tx_data_p[2](n)         : AH30      : output : LVDS              :         : 5B        : N              
+led[0]                       : AJ1       : output : SSTL-135          :         : 3B        : Y              
+led[1]                       : AJ2       : output : SSTL-135          :         : 3B        : Y              
+led[2]                       : AJ3       : output : SSTL-135          :         : 3B        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ4       :        :                   :         : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ5       :        :                   :         : 3B        :                
+GND                          : AJ6       : gnd    :                   :         :           :                
+ddr_bot_addr[12]             : AJ7       : output : SSTL-135          :         : 3B        : Y              
+ddr_bot_addr[10]             : AJ8       : output : SSTL-135          :         : 3B        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ9       :        :                   :         : 3B        :                
+ddr_bot_ba[2]                : AJ10      : output : SSTL-135          :         : 3B        : Y              
+GND                          : AJ11      : gnd    :                   :         :           :                
+ddr_bot_addr[0]              : AJ12      : output : SSTL-135          :         : 3B        : Y              
+VREFB3BN0                    : AJ13      : power  :                   :         : 3B        :                
+ddr_bot_dq[2]                : AJ14      : bidir  : SSTL-135          :         : 4A        : Y              
+ddr_bot_dq[6]                : AJ15      : bidir  : SSTL-135          :         : 4A        : Y              
+VCCIO4A                      : AJ16      : power  :                   : 1.35V   : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ17      :        :                   :         : 4A        :                
+ddr_bot_dq[11]               : AJ18      : bidir  : SSTL-135          :         : 4A        : Y              
+ddr_bot_dq[14]               : AJ19      : bidir  : SSTL-135          :         : 4A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ20      :        :                   :         : 4A        :                
+GND                          : AJ21      : gnd    :                   :         :           :                
+rk_out[1]                    : AJ22      : output : SSTL-135          :         : 4A        : Y              
+rk_fault[0]                  : AJ23      : input  : SSTL-135          :         : 4A        : Y              
+rk_fault[1]                  : AJ24      : input  : SSTL-135          :         : 4A        : Y              
+rk_in[6]                     : AJ25      : input  : SSTL-135          :         : 4A        : Y              
+VCCIO4A                      : AJ26      : power  :                   : 1.35V   : 4A        :                
+rk_in[1]                     : AJ27      : input  : SSTL-135          :         : 4A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ28      :        :                   :         : 5B        :                
+tmds_tx_hpd                  : AJ29      : input  : 2.5 V             :         : 5B        : Y              
+tmds_tx_data_p[2]            : AJ30      : output : LVDS              :         : 5B        : Y              
+GND                          : AK2       : gnd    :                   :         :           :                
+led[3]                       : AK3       : output : SSTL-135          :         : 3B        : Y              
+VCCIO3B                      : AK4       : power  :                   : 1.35V   : 3B        :                
+ddr_bot_we_n                 : AK5       : output : SSTL-135          :         : 3B        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK6       :        :                   :         : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK7       :        :                   :         : 3B        :                
+ddr_bot_addr[11]             : AK8       : output : SSTL-135          :         : 3B        : Y              
+VCCIO3B                      : AK9       : power  :                   : 1.35V   : 3B        :                
+ddr_bot_addr[6]              : AK10      : output : SSTL-135          :         : 3B        : Y              
+ddr_bot_addr[7]              : AK11      : output : SSTL-135          :         : 3B        : Y              
+ddr_bot_addr[1]              : AK12      : output : SSTL-135          :         : 3B        : Y              
+ddr_bot_rzq                  : AK13      : input  : SSTL-135          :         : 4A        : Y              
+GND                          : AK14      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK15      :        :                   :         : 4A        :                
+ddr_bot_dq[9]                : AK16      : bidir  : SSTL-135          :         : 4A        : Y              
+ddr_bot_dq[8]                : AK17      : bidir  : SSTL-135          :         : 4A        : Y              
+ddr_bot_cke                  : AK18      : output : SSTL-135          :         : 4A        : Y              
+VCCIO4A                      : AK19      : power  :                   : 1.35V   : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK20      :        :                   :         : 4A        :                
+ddr_bot_reset_n              : AK21      : output : SSTL-135          :         : 4A        : Y              
+rk_out[0]                    : AK22      : output : SSTL-135          :         : 4A        : Y              
+rk_out[3]                    : AK23      : output : SSTL-135          :         : 4A        : Y              
+GND                          : AK24      : gnd    :                   :         :           :                
+rk_fault[3]                  : AK25      : input  : SSTL-135          :         : 4A        : Y              
+rk_in[5]                     : AK26      : input  : SSTL-135          :         : 4A        : Y              
+rk_in[2]                     : AK27      : input  : SSTL-135          :         : 4A        : Y              
+rk_in[0]                     : AK28      : input  : SSTL-135          :         : 4A        : Y              
+GND                          : AK29      : gnd    :                   :         :           :                
+GND                          : B1        : gnd    :                   :         :           :                
+GND                          : B2        : gnd    :                   :         :           :                
+DNU                          : B3        :        :                   :         :           :                
+DNU                          : B4        :        :                   :         :           :                
+VCCIO8A                      : B5        : power  :                   : 1.35V   : 8A        :                
+ddr_top_addr[12]             : B6        : output : SSTL-135          :         : 8A        : Y              
+ddr_top_addr[10]             : B7        : output : SSTL-135          :         : 8A        : Y              
+ddr_top_ras_n                : B8        : output : SSTL-135          :         : 8A        : Y              
+VREFB8AN0                    : B9        : power  :                   : 0.675V  : 8A        :                
+GND                          : B10       : gnd    :                   :         :           :                
+ddr_top_addr[0]              : B11       : output : SSTL-135          :         : 8A        : Y              
+ddr_top_rzq                  : B12       : input  : SSTL-135          :         : 7A        : Y              
+ddr_top_odt                  : B13       : output : SSTL-135          :         : 7A        : Y              
+ddr_top_dm[0]                : B14       : output : SSTL-135          :         : 7A        : Y              
+VCCIO7A                      : B15       : power  :                   : 1.35V   : 7A        :                
+VREFB7AN0                    : B16       : power  :                   : 0.675V  : 7A        :                
+ddr_top_dq[8]                : B17       : bidir  : SSTL-135          :         : 7A        : Y              
+ddr_top_dq[14]               : B18       : bidir  : SSTL-135          :         : 7A        : Y              
+ddr_top_dm[1]                : B19       : output : SSTL-135          :         : 7A        : Y              
+GND                          : B20       : gnd    :                   :         :           :                
+a429_rx_n[13]                : B21       : input  : SSTL-135          :         : 7A        : Y              
+ddr_top_reset_n              : B22       : output : SSTL-135          :         : 7A        : Y              
+a429_tx_n[1]                 : B23       : output : SSTL-135          :         : 7A        : Y              
+a429_tx_p[1]                 : B24       : output : SSTL-135          :         : 7A        : Y              
+VCCIO7A                      : B25       : power  :                   : 1.35V   : 7A        :                
+a429_tx_n[0]                 : B26       : output : SSTL-135          :         : 7A        : Y              
+a429_tx_n[3]                 : B27       : output : SSTL-135          :         : 7A        : Y              
+a429_rx_test_p               : B28       : output : 2.5 V             :         : 6A        : Y              
+a429_tx_slp[2]               : B29       : output : 2.5 V             :         : 6A        : Y              
+GND                          : B30       : gnd    :                   :         :           :                
+RREF                         : C1        :        :                   :         :           :                
+GND                          : C2        : gnd    :                   :         :           :                
+GND                          : C3        : gnd    :                   :         :           :                
+GND                          : C4        : gnd    :                   :         :           :                
+nCONFIG                      : C5        :        :                   :         : 9A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C6        :        :                   :         : 8A        :                
+ddr_top_we_n                 : C7        : output : SSTL-135          :         : 8A        : Y              
+VCCIO8A                      : C8        : power  :                   : 1.35V   : 8A        :                
+ddr_top_cas_n                : C9        : output : SSTL-135          :         : 8A        : Y              
+ddr_top_addr[7]              : C10       : output : SSTL-135          :         : 8A        : Y              
+ddr_top_dq[2]                : C11       : bidir  : SSTL-135          :         : 7A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C12       :        :                   :         : 7A        :                
+GND                          : C13       : gnd    :                   :         :           :                
+ddr_top_dq[11]               : C14       : bidir  : SSTL-135          :         : 7A        : Y              
+ddr_top_dq[0]                : C15       : bidir  : SSTL-135          :         : 7A        : Y              
+ddr_top_dq[1]                : C16       : bidir  : SSTL-135          :         : 7A        : Y              
+ddr_top_dq[9]                : C17       : bidir  : SSTL-135          :         : 7A        : Y              
+VCCIO7A                      : C18       : power  :                   : 1.35V   : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C19       :        :                   :         : 7A        :                
+a429_rx_n[5]                 : C20       : input  : SSTL-135          :         : 7A        : Y              
+a429_rx_p[13]                : C21       : input  : SSTL-135          :         : 7A        : Y              
+a429_rx_n[12]                : C22       : input  : SSTL-135          :         : 7A        : Y              
+GND                          : C23       : gnd    :                   :         :           :                
+a429_rx_n[9]                 : C24       : input  : SSTL-135          :         : 7A        : Y              
+a429_rx_p[9]                 : C25       : input  : SSTL-135          :         : 7A        : Y              
+a429_rx_p[8]                 : C26       : input  : SSTL-135          :         : 7A        : Y              
+a429_tx_p[0]                 : C27       : output : SSTL-135          :         : 7A        : Y              
+VCCIO6A                      : C28       : power  :                   : 2.5V    : 6A        :                
+a429_tx_slp[1]               : C29       : output : 2.5 V             :         : 6A        : Y              
+a429_tx_slp[0]               : C30       : output : 2.5 V             :         : 6A        : Y              
+GND                          : D1        : gnd    :                   :         :           :                
+GND                          : D2        : gnd    :                   :         :           :                
+NC                           : D3        :        :                   :         :           :                
+NC                           : D4        :        :                   :         :           :                
+GND                          : D5        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D6        :        :                   :         : 8A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D7        :        :                   :         : 8A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D8        :        :                   :         : 8A        :                
+ddr_top_addr[6]              : D9        : output : SSTL-135          :         : 8A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D10       :        :                   :         : 8A        :                
+VCCIO8A                      : D11       : power  :                   : 1.35V   : 8A        :                
+ddr_top_dq[6]                : D12       : bidir  : SSTL-135          :         : 7A        : Y              
+ddr_top_addr[9]              : D13       : output : SSTL-135          :         : 8A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D14       :        :                   :         : 7A        :                
+DNU                          : D15       :        :                   :         :           :                
+GND                          : D16       : gnd    :                   :         :           :                
+ddr_top_dq[4]                : D17       : bidir  : SSTL-135          :         : 7A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D18       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D19       :        :                   :         : 7A        :                
+a429_rx_p[5]                 : D20       : input  : SSTL-135          :         : 7A        : Y              
+VCCIO7A                      : D21       : power  :                   : 1.35V   : 7A        :                
+a429_rx_p[12]                : D22       : input  : SSTL-135          :         : 7A        : Y              
+a429_rx_n[15]                : D23       : input  : SSTL-135          :         : 7A        : Y              
+VCCPD7A8A                    : D24       : power  :                   : 2.5V    : 7A, 8A    :                
+a429_rx_n[10]                : D25       : input  : SSTL-135          :         : 7A        : Y              
+GND                          : D26       : gnd    :                   :         :           :                
+milstd_tx_p[1]               : D27       : output : 2.5 V             :         : 6A        : Y              
+milstd_tx_p[0]               : D28       : output : 2.5 V             :         : 6A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D29       :        :                   :         : 6A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D30       :        :                   :         : 6A        :                
+NC                           : E1        :        :                   :         :           :                
+NC                           : E2        :        :                   :         :           :                
+GND                          : E3        : gnd    :                   :         :           :                
+GND                          : E4        : gnd    :                   :         :           :                
+GND                          : E5        :        :                   :         : 9A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E6        :        :                   :         : 8A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E7        :        :                   :         : 8A        :                
+a429_tx_n[4]                 : E8        : output : SSTL-135          :         : 8A        : Y              
+GND                          : E9        : gnd    :                   :         :           :                
+ddr_top_addr[3]              : E10       : output : SSTL-135          :         : 8A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E11       :        :                   :         : 8A        :                
+ddr_top_addr[8]              : E12       : output : SSTL-135          :         : 8A        : Y              
+a429_ctrl_n[1]               : E13       : input  : SSTL-135          :         : 8A        : Y              
+VCCIO8A                      : E14       : power  :                   : 1.35V   : 8A        :                
+ddr_top_ba[2]                : E15       : output : SSTL-135          :         : 8A        : Y              
+ddr_top_addr[5]              : E16       : output : SSTL-135          :         : 8A        : Y              
+ddr_top_dq[5]                : E17       : bidir  : SSTL-135          :         : 7A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E18       :        :                   :         : 7A        :                
+GND                          : E19       : gnd    :                   :         :           :                
+a429_rx_n[6]                 : E20       : input  : SSTL-135          :         : 7A        : Y              
+a429_rx_n[0]                 : E21       : input  : SSTL-135          :         : 7A        : Y              
+a429_rx_p[0]                 : E22       : input  : SSTL-135          :         : 7A        : Y              
+a429_rx_p[15]                : E23       : input  : SSTL-135          :         : 7A        : Y              
+VCCIO7A                      : E24       : power  :                   : 1.35V   : 7A        :                
+a429_rx_p[10]                : E25       : input  : SSTL-135          :         : 7A        : Y              
+a429_rx_n[8]                 : E26       : input  : SSTL-135          :         : 7A        : Y              
+milstd_tx_n[1]               : E27       : output : 2.5 V             :         : 6A        : Y              
+milstd_tx_n[0]               : E28       : output : 2.5 V             :         : 6A        : Y              
+GND                          : E29       : gnd    :                   :         :           :                
+adv7181_int                  : E30       : input  : 2.5 V             :         : 6A        : Y              
+GND                          : F1        : gnd    :                   :         :           :                
+GND                          : F2        : gnd    :                   :         :           :                
+NC                           : F3        :        :                   :         :           :                
+NC                           : F4        :        :                   :         :           :                
+GND                          : F5        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F6        :        :                   :         : 8A        :                
+VCCIO8A                      : F7        : power  :                   : 1.35V   : 8A        :                
+a429_tx_p[4]                 : F8        : output : SSTL-135          :         : 8A        : Y              
+ddr_top_addr[2]              : F9        : output : SSTL-135          :         : 8A        : Y              
+VCCPGM                       : F10       : power  :                   : 3.0V/3.3V :           :                
+VCCPD7A8A                    : F11       : power  :                   : 2.5V    : 7A, 8A    :                
+GND                          : F12       : gnd    :                   :         :           :                
+a429_ctrl_p[1]               : F13       : input  : SSTL-135          :         : 8A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F14       :        :                   :         : 8A        :                
+ddr_top_ba[1]                : F15       : output : SSTL-135          :         : 8A        : Y              
+ddr_top_addr[4]              : F16       : output : SSTL-135          :         : 8A        : Y              
+VCCIO7A                      : F17       : power  :                   : 1.35V   : 7A        :                
+ddr_top_dq[12]               : F18       : bidir  : SSTL-135          :         : 7A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F19       :        :                   :         : 7A        :                
+a429_rx_p[6]                 : F20       : input  : SSTL-135          :         : 7A        : Y              
+VCCPD7A8A                    : F21       : power  :                   : 2.5V    : 7A, 8A    :                
+GND                          : F22       : gnd    :                   :         :           :                
+VCCPD7A8A                    : F23       : power  :                   : 2.5V    : 7A, 8A    :                
+DNU                          : F24       :        :                   :         :           :                
+av_rx0_data[19]              : F25       : input  : 2.5 V             :         : 6A        : Y              
+milstd_tx_inh[1]             : F26       : output : 2.5 V             :         : 6A        : Y              
+VCCIO6A                      : F27       : power  :                   : 2.5V    : 6A        :                
+milstd_tx_inh[0]             : F28       : output : 2.5 V             :         : 6A        : Y              
+i2c_scl                      : F29       : bidir  : 2.5 V             :         : 6A        : Y              
+av_rx0_data[18]              : F30       : input  : 2.5 V             :         : 6A        : Y              
+NC                           : G1        :        :                   :         :           :                
+NC                           : G2        :        :                   :         :           :                
+GND                          : G3        : gnd    :                   :         :           :                
+GND                          : G4        : gnd    :                   :         :           :                
+MSEL2                        : G5        :        :                   :         : 9A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G6        :        :                   :         : 8A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G7        :        :                   :         : 8A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G8        :        :                   :         : 8A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G9        :        :                   :         : 8A        :                
+VCCIO8A                      : G10       : power  :                   : 1.35V   : 8A        :                
+VCC_AUX                      : G11       : power  :                   : 2.5V    :           :                
+a429_ctrl_n[2]               : G12       : input  : SSTL-135          :         : 8A        : Y              
+VCCPD7A8A                    : G13       : power  :                   : 2.5V    : 7A, 8A    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G14       :        :                   :         : 8A        :                
+GND                          : G15       : gnd    :                   :         :           :                
+VCCPD7A8A                    : G16       : power  :                   : 2.5V    : 7A, 8A    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G17       :        :                   :         : 7A        :                
+ddr_top_dq[13]               : G18       : bidir  : SSTL-135          :         : 7A        : Y              
+VCCPD7A8A                    : G19       : power  :                   : 2.5V    : 7A, 8A    :                
+VCCIO7A                      : G20       : power  :                   : 1.35V   : 7A        :                
+a429_rx_n[2]                 : G21       : input  : SSTL-135          :         : 7A        : Y              
+a429_rx_n[1]                 : G22       : input  : SSTL-135          :         : 7A        : Y              
+a429_rx_p[1]                 : G23       : input  : SSTL-135          :         : 7A        : Y              
+GND                          : G24       :        :                   :         : 7A        :                
+GND                          : G25       : gnd    :                   :         :           :                
+milstd_rx_en[1]              : G26       : output : 2.5 V             :         : 6A        : Y              
+milstd_rx_en[0]              : G27       : output : 2.5 V             :         : 6A        : Y              
+av_rx0_data[17]              : G28       : input  : 2.5 V             :         : 6A        : Y              
+i2c_sda                      : G29       : bidir  : 2.5 V             :         : 6A        : Y              
+VCCIO6A                      : G30       : power  :                   : 2.5V    : 6A        :                
+GND                          : H1        : gnd    :                   :         :           :                
+GND                          : H2        : gnd    :                   :         :           :                
+NC                           : H3        :        :                   :         :           :                
+NC                           : H4        :        :                   :         :           :                
+GND                          : H5        : gnd    :                   :         :           :                
+nCE                          : H6        :        :                   :         : 9A        :                
+a429_tx_n[5]                 : H7        : output : SSTL-135          :         : 8A        : Y              
+GND                          : H8        : gnd    :                   :         :           :                
+a429_ctrl_n[5]               : H9        : input  : SSTL-135          :         : 8A        : Y              
+VCCBAT                       : H10       : power  :                   : 1.2V    :           :                
+GND                          : H11       : gnd    :                   :         :           :                
+a429_ctrl_p[2]               : H12       : input  : SSTL-135          :         : 8A        : Y              
+VCCIO8A                      : H13       : power  :                   : 1.35V   : 8A        :                
+a429_ctrl_n[0]               : H14       : input  : SSTL-135          :         : 8A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H15       :        :                   :         : 8A        :                
+VCC_AUX                      : H16       : power  :                   : 2.5V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H17       :        :                   :         : 7A        :                
+GND                          : H18       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H19       :        :                   :         : 7A        :                
+a429_rx_n[3]                 : H20       : input  : SSTL-135          :         : 7A        : Y              
+a429_rx_p[2]                 : H21       : input  : SSTL-135          :         : 7A        : Y              
+VCC_AUX                      : H22       : power  :                   : 2.5V    :           :                
+VCCIO7A                      : H23       : power  :                   : 1.35V   : 7A        :                
+a429_rx_test_n               : H24       : output : 2.5 V             :         : 6A        : Y              
+av_rx0_data[16]              : H25       : input  : 2.5 V             :         : 6A        : Y              
+milstd_rx_p[1]               : H26       : input  : 2.5 V             :         : 6A        : Y              
+milstd_rx_p[0]               : H27       : input  : 2.5 V             :         : 6A        : Y              
+GND                          : H28       : gnd    :                   :         :           :                
+av_rx0_de                    : H29       : input  : 2.5 V             :         : 6A        : Y              
+av_rx0_vsync_n               : H30       : input  : 2.5 V             :         : 6A        : Y              
+NC                           : J1        :        :                   :         :           :                
+NC                           : J2        :        :                   :         :           :                
+GND                          : J3        : gnd    :                   :         :           :                
+GND                          : J4        : gnd    :                   :         :           :                
+VCCE_GXBL                    : J5        : power  :                   : 1.1V    :           :                
+GND                          : J6        : gnd    :                   :         :           :                
+a429_tx_p[5]                 : J7        : output : SSTL-135          :         : 8A        : Y              
+VCCA_FPLL                    : J8        : power  :                   : 2.5V    :           :                
+a429_ctrl_p[5]               : J9        : input  : SSTL-135          :         : 8A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : J10       :        :                   :         : 8A        :                
+GND                          : J11       : gnd    :                   :         :           :                
+dp_aux_n                     : J12       : bidir  : Differential 1.35-V SSTL :         : 8A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : J13       :        :                   :         : 8A        :                
+a429_ctrl_p[0]               : J14       : input  : SSTL-135          :         : 8A        : Y              
+ddr_top_cs_n                 : J15       : output : SSTL-135          :         : 8A        : Y              
+VCCIO8A                      : J16       : power  :                   : 1.35V   : 8A        :                
+ddr_top_dqs_n[0]             : J17       : bidir  : Differential 1.35-V SSTL :         : 7A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : J18       :        :                   :         : 7A        :                
+a429_rx_n[7]                 : J19       : input  : SSTL-135          :         : 7A        : Y              
+a429_rx_p[3]                 : J20       : input  : SSTL-135          :         : 7A        : Y              
+GND                          : J21       : gnd    :                   :         :           :                
+av_rx0_hsync_n               : J22       : input  : 2.5 V             :         : 6A        : Y              
+av_rx0_data[15]              : J23       : input  : 2.5 V             :         : 6A        : Y              
+VCCA_FPLL                    : J24       : power  :                   : 2.5V    :           :                
+milstd_rx_n[1]               : J25       : input  : 2.5 V             :         : 6A        : Y              
+VCCIO6A                      : J26       : power  :                   : 2.5V    : 6A        :                
+milstd_rx_n[0]               : J27       : input  : 2.5 V             :         : 6A        : Y              
+av_rx0_data[14]              : J28       : input  : 2.5 V             :         : 6A        : Y              
+av_rx0_data[13]              : J29       : input  : 2.5 V             :         : 6A        : Y              
+av_rx0_data[12]              : J30       : input  : 2.5 V             :         : 6A        : Y              
+GND                          : K1        : gnd    :                   :         :           :                
+GND                          : K2        : gnd    :                   :         :           :                
+GXB_NC                       : K3        :        :                   :         : B2L       :                
+GXB_NC                       : K4        :        :                   :         : B2L       :                
+GND                          : K5        : gnd    :                   :         :           :                
+VCCH_GXBL                    : K6        : power  :                   : 2.5V    :           :                
+nSTATUS                      : K7        :        :                   :         : 9A        :                
+NC                           : K8        :        :                   :         :           :                
+GND                          : K9        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K10       :        :                   :         : 8A        :                
+a429_ctrl_n[3]               : K11       : input  : SSTL-135          :         : 8A        : Y              
+dp_aux_p                     : K12       : bidir  : Differential 1.35-V SSTL :         : 8A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : K13       :        :                   :         : 8A        :                
+GND                          : K14       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K15       :        :                   :         : 8A        :                
+ddr_top_dqs_p[1]             : K16       : bidir  : Differential 1.35-V SSTL :         : 7A        : Y              
+ddr_top_dqs_p[0]             : K17       : bidir  : Differential 1.35-V SSTL :         : 7A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : K18       :        :                   :         : 7A        :                
+VCCIO7A                      : K19       : power  :                   : 1.35V   : 7A        :                
+a429_rx_n[4]                 : K20       : input  : SSTL-135          :         : 7A        : Y              
+a708_rx_p[0]                 : K21       : input  : 2.5 V             :         : 6A        : Y              
+av_rx0_sfl                   : K22       : input  : 2.5 V             :         : 6A        : Y              
+VCCPD6A                      : K23       : power  :                   : 2.5V    : 6A        :                
+GND                          : K24       : gnd    :                   :         :           :                
+av_rx0_data[11]              : K25       : input  : 2.5 V             :         : 6A        : Y              
+av_rx0_data[10]              : K26       : input  : 2.5 V             :         : 6A        : Y              
+av_rx0_data[9]               : K27       : input  : 2.5 V             :         : 6A        : Y              
+av_rx0_data[8]               : K28       : input  : 2.5 V             :         : 6A        : Y              
+VCCIO6A                      : K29       : power  :                   : 2.5V    : 6A        :                
+av_rx0_data[7]               : K30       : input  : 2.5 V             :         : 6A        : Y              
+GND                          : L1        :        :                   :         : B2L       :                
+GND                          : L2        :        :                   :         : B2L       :                
+GND                          : L3        : gnd    :                   :         :           :                
+GND                          : L4        : gnd    :                   :         :           :                
+VCCL_GXBL                    : L5        : power  :                   : 1.1V    :           :                
+GND                          : L6        : gnd    :                   :         :           :                
+NC                           : L7        :        :                   :         :           :                
+CONF_DONE                    : L8        :        :                   :         : 9A        :                
+a429_ctrl_n[4]               : L9        : input  : SSTL-135          :         : 8A        : Y              
+a429_ctrl_p[4]               : L10       : input  : SSTL-135          :         : 8A        : Y              
+a429_ctrl_p[3]               : L11       : input  : SSTL-135          :         : 8A        : Y              
+VCCIO8A                      : L12       : power  :                   : 1.35V   : 8A        :                
+si5332_clk3_p(n)             : L13       : input  : LVDS              :         : 8A        : N              
+si5332_clk3_p                : L14       : input  : LVDS              :         : 8A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L15       :        :                   :         : 8A        :                
+ddr_top_dqs_n[1]             : L16       : bidir  : Differential 1.35-V SSTL :         : 7A        : Y              
+GND                          : L17       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L18       :        :                   :         : 7A        :                
+a429_rx_p[7]                 : L19       : input  : SSTL-135          :         : 7A        : Y              
+a429_rx_p[4]                 : L20       : input  : SSTL-135          :         : 7A        : Y              
+a708_rx_n[0]                 : L21       : input  : 2.5 V             :         : 6A        : Y              
+VCCIO6A                      : L22       : power  :                   : 2.5V    : 6A        :                
+av_rx0_data[6]               : L23       : input  : 2.5 V             :         : 6A        : Y              
+av_rx0_data[5]               : L24       : input  : 2.5 V             :         : 6A        : Y              
+av_rx0_data[4]               : L25       : input  : 2.5 V             :         : 6A        : Y              
+av_rx0_data[3]               : L26       : input  : 2.5 V             :         : 6A        : Y              
+GND                          : L27       : gnd    :                   :         :           :                
+av_rx0_data[2]               : L28       : input  : 2.5 V             :         : 6A        : Y              
+av_rx0_data[0]               : L29       : input  : 2.5 V             :         : 6A        : Y              
+av_rx0_data[1]               : L30       : input  : 2.5 V             :         : 6A        : Y              
+GND                          : M1        : gnd    :                   :         :           :                
+GND                          : M2        : gnd    :                   :         :           :                
+dp_lane_p[2](n)              : M3        : output : 1.5-V PCML        :         : B2L       : N              
+dp_lane_p[2]                 : M4        : output : 1.5-V PCML        :         : B2L       : Y              
+GND                          : M5        : gnd    :                   :         :           :                
+VCCE_GXBL                    : M6        : power  :                   : 1.1V    :           :                
+MSEL4                        : M7        :        :                   :         : 9A        :                
+ddr_top_ck_n                 : M8        : output : Differential 1.35-V SSTL :         : 8A        : Y              
+ddr_top_ck_p                 : M9        : output : Differential 1.35-V SSTL :         : 8A        : Y              
+GND                          : M10       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M11       :        :                   :         : 8A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M12       :        :                   :         : 8A        :                
+VCC                          : M13       : power  :                   : 1.1V    :           :                
+GND                          : M14       : gnd    :                   :         :           :                
+VCC                          : M15       : power  :                   : 1.1V    :           :                
+GND                          : M16       : gnd    :                   :         :           :                
+VCC                          : M17       : power  :                   : 1.1V    :           :                
+GND                          : M18       : gnd    :                   :         :           :                
+VCC                          : M19       : power  :                   : 1.1V    :           :                
+GND                          : M20       : gnd    :                   :         :           :                
+a708_tx_p[1]                 : M21       : output : 2.5 V             :         : 6A        : Y              
+a708_tx_n[0]                 : M22       : output : 2.5 V             :         : 6A        : Y              
+av_rx0_fb                    : M23       : output : 2.5 V             :         : 6A        : Y              
+VCCPD6A                      : M24       : power  :                   : 2.5V    : 6A        :                
+VCCIO6A                      : M25       : power  :                   : 2.5V    : 6A        :                
+VREFB6AN0                    : M26       : power  :                   :         : 6A        :                
+pu_i2c_scl                   : M27       : bidir  : 2.5 V             :         : 6A        : Y              
+av_rx0_llc                   : M28       : input  : 2.5 V             :         : 6A        : Y              
+adv7181_reset                : M29       : output : 2.5 V             :         : 6A        : Y              
+GND                          : M30       : gnd    :                   :         :           :                
+GND                          : N1        :        :                   :         : B2L       :                
+GND                          : N2        :        :                   :         : B2L       :                
+GND                          : N3        : gnd    :                   :         :           :                
+GND                          : N4        : gnd    :                   :         :           :                
+VCCE_GXBL                    : N5        : power  :                   : 1.1V    :           :                
+GND                          : N6        : gnd    :                   :         :           :                
+GND                          : N7        :        :                   :         : B2L       :                
+GND                          : N8        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N9        :        :                   :         : 8A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N10       :        :                   :         : 8A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N11       :        :                   :         : 8A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N12       :        :                   :         : 8A        :                
+GND                          : N13       : gnd    :                   :         :           :                
+VCC                          : N14       : power  :                   : 1.1V    :           :                
+GND                          : N15       : gnd    :                   :         :           :                
+VCC                          : N16       : power  :                   : 1.1V    :           :                
+GND                          : N17       : gnd    :                   :         :           :                
+VCC                          : N18       : power  :                   : 1.1V    :           :                
+GND                          : N19       : gnd    :                   :         :           :                
+a708_rx_n[1]                 : N20       : input  : 2.5 V             :         : 6A        : Y              
+a708_tx_n[1]                 : N21       : output : 2.5 V             :         : 6A        : Y              
+a708_tx_p[0]                 : N22       : output : 2.5 V             :         : 6A        : Y              
+GND                          : N23       : gnd    :                   :         :           :                
+av_rx1_data[19]              : N24       : input  : 2.5 V             :         : 6A        : Y              
+av_rx1_data[18]              : N25       : input  : 2.5 V             :         : 6A        : Y              
+pu_i2c_sda                   : N26       : bidir  : 2.5 V             :         : 6A        : Y              
+av_rx1_data[17]              : N27       : input  : 2.5 V             :         : 6A        : Y              
+VCCIO6A                      : N28       : power  :                   : 2.5V    : 6A        :                
+av_rx1_data[16]              : N29       : input  : 2.5 V             :         : 6A        : Y              
+av_rx1_de                    : N30       : input  : 2.5 V             :         : 6A        : Y              
+GND                          : P1        : gnd    :                   :         :           :                
+GND                          : P2        : gnd    :                   :         :           :                
+dp_lane_p[3](n)              : P3        : output : 1.5-V PCML        :         : B2L       : N              
+dp_lane_p[3]                 : P4        : output : 1.5-V PCML        :         : B2L       : Y              
+GND                          : P5        : gnd    :                   :         :           :                
+VCCH_GXBL                    : P6        : power  :                   : 2.5V    :           :                
+MSEL3                        : P7        :        :                   :         : 9A        :                
+GND                          : P8        :        :                   :         : B2L       :                
+MSEL1                        : P9        :        :                   :         : 9A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P10       :        :                   :         : 8A        :                
+GND                          : P11       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P12       :        :                   :         : 8A        :                
+VCC                          : P13       : power  :                   : 1.1V    :           :                
+GND                          : P14       : gnd    :                   :         :           :                
+VCC                          : P15       : power  :                   : 1.1V    :           :                
+GND                          : P16       : gnd    :                   :         :           :                
+VCC                          : P17       : power  :                   : 1.1V    :           :                
+GND                          : P18       : gnd    :                   :         :           :                
+VCC                          : P19       : power  :                   : 1.1V    :           :                
+a708_rx_p[1]                 : P20       : input  : 2.5 V             :         : 6A        : Y              
+VCCIO6A                      : P21       : power  :                   : 2.5V    : 6A        :                
+si5332_clk1_p                : P22       : input  : LVDS              :         : 6A        : Y              
+si5332_clk1_p(n)             : P23       : input  : LVDS              :         : 6A        : N              
+VCCPD6A                      : P24       : power  :                   : 2.5V    : 6A        :                
+av_rx1_vsync_n               : P25       : input  : 2.5 V             :         : 6A        : Y              
+GND                          : P26       : gnd    :                   :         :           :                
+VREFB5BN0                    : P27       : power  :                   :         : 5B        :                
+av_rx1_hsync_n               : P28       : input  : 2.5 V             :         : 6A        : Y              
+av_rx1_data[14]              : P29       : input  : 2.5 V             :         : 6A        : Y              
+av_rx1_data[15]              : P30       : input  : 2.5 V             :         : 6A        : Y              
+GND                          : R1        :        :                   :         : B2L       :                
+GND                          : R2        :        :                   :         : B2L       :                
+GND                          : R3        : gnd    :                   :         :           :                
+GND                          : R4        : gnd    :                   :         :           :                
+VCCL_GXBL                    : R5        : power  :                   : 1.1V    :           :                
+GND                          : R6        : gnd    :                   :         :           :                
+si5332_clk4_p(n)             : R7        : input  : HCSL              :         : B1L       : N              
+si5332_clk4_p                : R8        : input  : HCSL              :         : B1L       : Y              
+GND                          : R9        : gnd    :                   :         :           :                
+lcd_bklt_en[1]               : R10       : output : 2.5 V             :         : 3A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R11       :        :                   :         : 8A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R12       :        :                   :         : 8A        :                
+GND                          : R13       : gnd    :                   :         :           :                
+VCC                          : R14       : power  :                   : 1.1V    :           :                
+GND                          : R15       : gnd    :                   :         :           :                
+VCC                          : R16       : power  :                   : 1.1V    :           :                
+GND                          : R17       : gnd    :                   :         :           :                
+VCC                          : R18       : power  :                   : 1.1V    :           :                
+GND                          : R19       : gnd    :                   :         :           :                
+a708_tx_inh[1]               : R20       : output : 2.5 V             :         : 6A        : Y              
+a708_rx_en[1]                : R21       : output : 2.5 V             :         : 6A        : Y              
+a708_rx_en[0]                : R22       : output : 2.5 V             :         : 6A        : Y              
+lvds_rx1_clk_p[1](n)         : R23       : input  : LVDS              :         : 6A        : N              
+VCCIO6A                      : R24       : power  :                   : 2.5V    : 6A        :                
+av_rx1_data[13]              : R25       : input  : 2.5 V             :         : 6A        : Y              
+lvds_rx1_data_p[5](n)        : R26       : input  : LVDS              :         : 5B        : N              
+av_rx1_data[12]              : R27       : input  : 2.5 V             :         : 6A        : Y              
+av_rx1_sfl                   : R28       : input  : 2.5 V             :         : 6A        : Y              
+GND                          : R29       : gnd    :                   :         :           :                
+lvds_rx1_data_p[7](n)        : R30       : input  : LVDS              :         : 5B        : N              
+GND                          : T1        : gnd    :                   :         :           :                
+GND                          : T2        : gnd    :                   :         :           :                
+dp_lane_p[0](n)              : T3        : output : 1.5-V PCML        :         : B1L       : N              
+dp_lane_p[0]                 : T4        : output : 1.5-V PCML        :         : B1L       : Y              
+GND                          : T5        : gnd    :                   :         :           :                
+VCCE_GXBL                    : T6        : power  :                   : 1.1V    :           :                
+DCLK                         : T7        :        :                   :         : 3A        :                
+MSEL0                        : T8        :        :                   :         : 9A        :                
+lvds_imx6_data_p[2]          : T9        : input  : LVDS              :         : 3A        : Y              
+lvds_imx6_data_p[1]          : T10       : input  : LVDS              :         : 3A        : Y              
+dp_hpd                       : T11       : input  : 2.5 V             :         : 3A        : Y              
+GND                          : T12       : gnd    :                   :         :           :                
+VCC                          : T13       : power  :                   : 1.1V    :           :                
+GND                          : T14       : gnd    :                   :         :           :                
+VCC                          : T15       : power  :                   : 1.1V    :           :                
+GND                          : T16       : gnd    :                   :         :           :                
+VCC                          : T17       : power  :                   : 1.1V    :           :                
+GND                          : T18       : gnd    :                   :         :           :                
+VCC                          : T19       : power  :                   : 1.1V    :           :                
+GND                          : T20       : gnd    :                   :         :           :                
+a708_tx_inh[0]               : T21       : output : 2.5 V             :         : 6A        : Y              
+GND                          : T22       : gnd    :                   :         :           :                
+lvds_rx1_clk_p[1]            : T23       : input  : LVDS              :         : 6A        : Y              
+lvds_rx1_clk_p[0](n)         : T24       : input  : LVDS              :         : 5B        : N              
+lvds_rx1_data_p[5]           : T25       : input  : LVDS              :         : 5B        : Y              
+VCCPD5B                      : T26       : power  :                   : 2.5V    : 5B        :                
+VCCIO5B                      : T27       : power  :                   : 2.5V    : 5B        :                
+lvds_rx1_data_p[6]           : T28       : input  : LVDS              :         : 5B        : Y              
+lvds_rx1_data_p[6](n)        : T29       : input  : LVDS              :         : 5B        : N              
+lvds_rx1_data_p[7]           : T30       : input  : LVDS              :         : 5B        : Y              
+GND                          : U1        :        :                   :         : B1L       :                
+GND                          : U2        :        :                   :         : B1L       :                
+GND                          : U3        : gnd    :                   :         :           :                
+GND                          : U4        : gnd    :                   :         :           :                
+VCCE_GXBL                    : U5        : power  :                   : 1.1V    :           :                
+GND                          : U6        : gnd    :                   :         :           :                
+altera_reserved_tdi          : U7        : input  : 2.5 V             :         : 3A        : N              
+lvds_imx6_data_p[2](n)       : U8        : input  : LVDS              :         : 3A        : N              
+lvds_imx6_data_p[1](n)       : U9        : input  : LVDS              :         : 3A        : N              
+VCCIO3A                      : U10       : power  :                   : 2.5V    : 3A        :                
+lvds_imx6_data_p[3]          : U11       : input  : LVDS              :         : 3A        : Y              
+lvds_imx6_data_p[3](n)       : U12       : input  : LVDS              :         : 3A        : N              
+GND                          : U13       : gnd    :                   :         :           :                
+VCC                          : U14       : power  :                   : 1.1V    :           :                
+GND                          : U15       : gnd    :                   :         :           :                
+VCC                          : U16       : power  :                   : 1.1V    :           :                
+GND                          : U17       : gnd    :                   :         :           :                
+VCC                          : U18       : power  :                   : 1.1V    :           :                
+GND                          : U19       : gnd    :                   :         :           :                
+VCC                          : U20       : power  :                   : 1.1V    :           :                
+lvds_rx0_clk_p[1]            : U21       : input  : LVDS              :         : 5B        : Y              
+lvds_rx0_clk_p[1](n)         : U22       : input  : LVDS              :         : 5B        : N              
+lvds_rx1_clk_p[0]            : U23       : input  : LVDS              :         : 5B        : Y              
+VCCPD5B                      : U24       : power  :                   : 2.5V    : 5B        :                
+GND                          : U25       : gnd    :                   :         :           :                
+lvds_rx1_data_p[2](n)        : U26       : input  : LVDS              :         : 5B        : N              
+lvds_rx1_data_p[4]           : U27       : input  : LVDS              :         : 5B        : Y              
+lvds_rx1_data_p[4](n)        : U28       : input  : LVDS              :         : 5B        : N              
+av_rx1_data[11]              : U29       : input  : 2.5 V             :         : 5B        : Y              
+VCCIO5B                      : U30       : power  :                   : 2.5V    : 5B        :                
+GND                          : V1        : gnd    :                   :         :           :                
+GND                          : V2        : gnd    :                   :         :           :                
+dp_lane_p[1](n)              : V3        : output : 1.5-V PCML        :         : B1L       : N              
+dp_lane_p[1]                 : V4        : output : 1.5-V PCML        :         : B1L       : Y              
+GND                          : V5        : gnd    :                   :         :           :                
+VCCH_GXBL                    : V6        : power  :                   : 2.5V    :           :                
+altera_reserved_tms          : V7        : input  : 2.5 V             :         : 3A        : N              
+GND                          : V8        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V9        :        :                   :         : 3A        :                
+lvds_imx6_data_p[0](n)       : V10       : input  : LVDS              :         : 3A        : N              
+lvds_imx6_data_p[0]          : V11       : input  : LVDS              :         : 3A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V12       :        :                   :         : 3B        :                
+VCC                          : V13       : power  :                   : 1.1V    :           :                
+GND                          : V14       : gnd    :                   :         :           :                
+VCC                          : V15       : power  :                   : 1.1V    :           :                
+GND                          : V16       : gnd    :                   :         :           :                
+VCC                          : V17       : power  :                   : 1.1V    :           :                
+GND                          : V18       : gnd    :                   :         :           :                
+VCC                          : V19       : power  :                   : 1.1V    :           :                
+GND                          : V20       : gnd    :                   :         :           :                
+lvds_rx1_data_p[0]           : V21       : input  : LVDS              :         : 5A        : Y              
+lvds_rx1_data_p[0](n)        : V22       : input  : LVDS              :         : 5A        : N              
+GND                          : V23       : gnd    :                   :         :           :                
+lvds_rx1_data_p[1]           : V24       : input  : LVDS              :         : 5B        : Y              
+lvds_rx1_data_p[1](n)        : V25       : input  : LVDS              :         : 5B        : N              
+lvds_rx1_data_p[2]           : V26       : input  : LVDS              :         : 5B        : Y              
+lvds_rx1_data_p[3]           : V27       : input  : LVDS              :         : 5B        : Y              
+GND                          : V28       : gnd    :                   :         :           :                
+av_rx1_data[9]               : V29       : input  : 2.5 V             :         : 5B        : Y              
+av_rx1_data[10]              : V30       : input  : 2.5 V             :         : 5B        : Y              
+GND                          : W1        :        :                   :         : B1L       :                
+GND                          : W2        :        :                   :         : B1L       :                
+GND                          : W3        : gnd    :                   :         :           :                
+GND                          : W4        : gnd    :                   :         :           :                
+VCCL_GXBL                    : W5        : power  :                   : 1.1V    :           :                
+GND                          : W6        : gnd    :                   :         :           :                
+pcie_clk_p(n)                : W7        : input  : HCSL              :         : B0L       : N              
+pcie_clk_p                   : W8        : input  : HCSL              :         : B0L       : Y              
+altera_reserved_tdo          : W9        : output : 2.5 V             :         : 3A        : N              
+heater_pwm                   : W10       : output : 2.5 V             :         : 3A        : Y              
+GND                          : W11       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W12       :        :                   :         : 3B        :                
+GND                          : W13       : gnd    :                   :         :           :                
+VCC                          : W14       : power  :                   : 1.1V    :           :                
+GND                          : W15       : gnd    :                   :         :           :                
+VCC                          : W16       : power  :                   : 1.1V    :           :                
+GND                          : W17       : gnd    :                   :         :           :                
+VCC                          : W18       : power  :                   : 1.1V    :           :                
+GND                          : W19       : gnd    :                   :         :           :                
+VCC                          : W20       : power  :                   : 1.1V    :           :                
+GND                          : W21       : gnd    :                   :         :           :                
+lvds_rx0_data_p[7]           : W22       : input  : LVDS              :         : 5A        : Y              
+VCCPD5A                      : W23       : power  :                   : 2.5V    : 5A        :                
+pcie_reset                   : W24       : input  : 2.5 V             :         : 5A        : Y              
+VCCPD5A                      : W25       : power  :                   : 2.5V    : 5A        :                
+VCCIO5B                      : W26       : power  :                   : 2.5V    : 5B        :                
+lvds_rx0_data_p[6](n)        : W27       : input  : LVDS              :         : 5A        : N              
+lvds_rx1_data_p[3](n)        : W28       : input  : LVDS              :         : 5B        : N              
+av_rx1_data[7]               : W29       : input  : 2.5 V             :         : 5B        : Y              
+av_rx1_data[8]               : W30       : input  : 2.5 V             :         : 5B        : Y              
+GND                          : Y1        : gnd    :                   :         :           :                
+GND                          : Y2        : gnd    :                   :         :           :                
+GXB_NC                       : Y3        :        :                   :         : B1L       :                
+GXB_NC                       : Y4        :        :                   :         : B1L       :                
+GND                          : Y5        : gnd    :                   :         :           :                
+VCCE_GXBL                    : Y6        : power  :                   : 1.1V    :           :                
+GND                          : Y7        : gnd    :                   :         :           :                
+VCCA_FPLL                    : Y8        : power  :                   : 2.5V    :           :                
+VCCIO3A                      : Y9        : power  :                   : 2.5V    : 3A        :                
+lvds_lcd_data_p[1]           : Y10       : output : LVDS              :         : 3A        : Y              
+spin_bklt_pwm                : Y11       : output : 2.5 V             :         : 3A        : Y              
+ddr_bot_cs_n                 : Y12       : output : SSTL-135          :         : 3B        : Y              
+ddr_bot_ck_p                 : Y13       : output : Differential 1.35-V SSTL :         : 3B        : Y              
+GND                          : Y14       : gnd    :                   :         :           :                
+lvds_imx6_clk_p              : Y15       : input  : LVDS              :         : 3B        : Y              
+ddr_bot_dqs_p[0]             : Y16       : bidir  : Differential 1.35-V SSTL :         : 4A        : Y              
+ddr_bot_dqs_p[1]             : Y17       : bidir  : Differential 1.35-V SSTL :         : 4A        : Y              
+ddr_bot_dqs_n[1]             : Y18       : bidir  : Differential 1.35-V SSTL :         : 4A        : Y              
+VCCIO4A                      : Y19       : power  :                   : 1.35V   : 4A        :                
+av_tx_blank_n                : Y20       : output : SSTL-135          :         : 4A        : Y              
+lvds_rx0_data_p[7](n)        : Y21       : input  : LVDS              :         : 5A        : N              
+lvds_rx0_data_p[1]           : Y22       : input  : LVDS              :         : 5A        : Y              
+adv7613_cs0                  : Y23       : output : 2.5 V             :         : 5A        : Y              
+GND                          : Y24       : gnd    :                   :         :           :                
+lvds_rx0_data_p[3]           : Y25       : input  : LVDS              :         : 5A        : Y              
+lvds_rx0_data_p[3](n)        : Y26       : input  : LVDS              :         : 5A        : N              
+lvds_rx0_data_p[6]           : Y27       : input  : LVDS              :         : 5A        : Y              
+lvds_rx0_data_p[4](n)        : Y28       : input  : LVDS              :         : 5B        : N              
+VCCIO5B                      : Y29       : power  :                   : 2.5V    : 5B        :                
+av_rx1_data[5]               : Y30       : input  : 2.5 V             :         : 5B        : Y              

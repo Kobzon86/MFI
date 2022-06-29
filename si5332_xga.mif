@@ -1,0 +1,90 @@
+-- Copyright (C) 2019  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and any partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details, at
+-- https://fpgasoftware.intel.com/eula.
+
+-- Quartus Prime generated Memory Initialization File (.mif)
+
+WIDTH=32;
+DEPTH=128;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+	00  :   00D40601;
+	01  :   00D41700;
+	02  :   00D41800;
+	03  :   00D41900;
+	04  :   00D41A00;
+	05  :   00D41B00;
+	06  :   00D41C00;
+	07  :   00D4216A;
+	08  :   00D42401;
+	09  :   00D42550;
+	0A  :   00D42900;
+	0B  :   00D42A00;
+	0C  :   00D42B25;
+	0D  :   00D4360A;
+	0E  :   00D43705;
+	0F  :   00D43800;
+	10  :   00D43908;
+	11  :   00D43A00;
+	12  :   00D43B18;
+	13  :   00D43C00;
+	14  :   00D44800;
+	15  :   00D45400;
+	16  :   00D46000;
+	17  :   00D46718;
+	18  :   00D4680C;
+	19  :   00D46900;
+	1A  :   00D46A08;
+	1B  :   00D46B00;
+	1C  :   00D46C0A;
+	1D  :   00D47300;
+	1E  :   00D47400;
+	1F  :   00D47501;
+	20  :   00D47A06;
+	21  :   00D47B01;
+	22  :   00D47C00;
+	23  :   00D47D00;
+	24  :   00D47F09;
+	25  :   00D48100;
+	26  :   00D48200;
+	27  :   00D48907;
+	28  :   00D48B00;
+	29  :   00D48C00;
+	2A  :   00D49807;
+	2B  :   00D49A00;
+	2C  :   00D49B00;
+	2D  :   00D4A706;
+	2E  :   00D4A801;
+	2F  :   00D4A900;
+	30  :   00D4AA00;
+	31  :   00D4AC06;
+	32  :   00D4AD01;
+	33  :   00D4AE00;
+	34  :   00D4AF00;
+	35  :   00D4B601;
+	36  :   00D4B706;
+	37  :   00D4B902;
+	38  :   00D4BA5E;
+	39  :   00D4BB0E;
+	3A  :   00D4BC4A;
+	3B  :   00D4BD00;
+	3C  :   00D4BE20;
+	3D  :   00D40602;
+	[3E..62]  :   FFFFFFFF;
+	63  :   00D40602;
+	[64..7F]  :   FFFFFFFF;
+END;

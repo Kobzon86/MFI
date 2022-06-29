@@ -1,0 +1,9 @@
+#
+# LVDS Display Interface
+#
+
+set_global_assignment -library "ldi_receiver" -name SDC_FILE [file join $::quartus(qip_path) "ldi_receiver.sdc"]
+set_global_assignment -library "ldi_receiver" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ldi_dps.sv"]
+set_global_assignment -library "ldi_receiver" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ldi_ddr_deserializer.sv"]
+set_global_assignment -library "ldi_receiver" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ldi_sdr_deserializer.sv"]
+set_global_assignment -library "ldi_receiver" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ldi_receiver.sv"]

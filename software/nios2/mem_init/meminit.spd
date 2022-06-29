@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+<file path="hdl_sim/onchip_mem.dat" type="DAT" initParamName="INIT_FILE" memoryPath="nios_ram_0" />
+<file path="hdl_sim/qsys_shared_ram_0.dat" type="DAT" initParamName="INIT_FILE" memoryPath="shared_ram_0" />
+<file path="onchip_mem.hex" type="HEX" initParamName="INIT_FILE" memoryPath="nios_ram_0" />
+<file path="qsys_shared_ram_0.hex" type="HEX" initParamName="INIT_FILE" memoryPath="shared_ram_0" />
+</simPackage>

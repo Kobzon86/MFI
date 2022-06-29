@@ -1,0 +1,198 @@
+	component qsys is
+		port (
+			arinc429_inputa                    : in    std_logic_vector(15 downto 0) := (others => 'X'); -- inputa
+			arinc429_inputb                    : in    std_logic_vector(15 downto 0) := (others => 'X'); -- inputb
+			arinc429_outputa                   : out   std_logic_vector(5 downto 0);                     -- outputa
+			arinc429_outputb                   : out   std_logic_vector(5 downto 0);                     -- outputb
+			arinc429_slewrate                  : out   std_logic_vector(5 downto 0);                     -- slewrate
+			arinc429_testab                    : out   std_logic_vector(1 downto 0);                     -- testab
+			arinc708_inputa                    : in    std_logic_vector(1 downto 0)  := (others => 'X'); -- inputa
+			arinc708_inputb                    : in    std_logic_vector(1 downto 0)  := (others => 'X'); -- inputb
+			arinc708_outputa                   : out   std_logic_vector(1 downto 0);                     -- outputa
+			arinc708_outputb                   : out   std_logic_vector(1 downto 0);                     -- outputb
+			arinc708_tx_inh                    : out   std_logic_vector(1 downto 0);                     -- tx_inh
+			arinc708_rx_en                     : out   std_logic_vector(1 downto 0);                     -- rx_en
+			av_clock65_clk                     : out   std_logic;                                        -- clk
+			av_clock_ref_clk                   : in    std_logic                     := 'X';             -- clk
+			check_pio_export_export            : out   std_logic_vector(7 downto 0);                     -- export
+			clock_out_clk                      : out   std_logic;                                        -- clk
+			crc_out_crc                        : out   std_logic_vector(31 downto 0);                    -- crc
+			ddr_0_mem_a                        : out   std_logic_vector(14 downto 0);                    -- mem_a
+			ddr_0_mem_ba                       : out   std_logic_vector(2 downto 0);                     -- mem_ba
+			ddr_0_mem_ck                       : out   std_logic_vector(0 downto 0);                     -- mem_ck
+			ddr_0_mem_ck_n                     : out   std_logic_vector(0 downto 0);                     -- mem_ck_n
+			ddr_0_mem_cke                      : out   std_logic_vector(0 downto 0);                     -- mem_cke
+			ddr_0_mem_cs_n                     : out   std_logic_vector(0 downto 0);                     -- mem_cs_n
+			ddr_0_mem_dm                       : out   std_logic_vector(1 downto 0);                     -- mem_dm
+			ddr_0_mem_ras_n                    : out   std_logic_vector(0 downto 0);                     -- mem_ras_n
+			ddr_0_mem_cas_n                    : out   std_logic_vector(0 downto 0);                     -- mem_cas_n
+			ddr_0_mem_we_n                     : out   std_logic_vector(0 downto 0);                     -- mem_we_n
+			ddr_0_mem_reset_n                  : out   std_logic;                                        -- mem_reset_n
+			ddr_0_mem_dq                       : inout std_logic_vector(15 downto 0) := (others => 'X'); -- mem_dq
+			ddr_0_mem_dqs                      : inout std_logic_vector(1 downto 0)  := (others => 'X'); -- mem_dqs
+			ddr_0_mem_dqs_n                    : inout std_logic_vector(1 downto 0)  := (others => 'X'); -- mem_dqs_n
+			ddr_0_mem_odt                      : out   std_logic_vector(0 downto 0);                     -- mem_odt
+			ddr_1_mem_a                        : out   std_logic_vector(14 downto 0);                    -- mem_a
+			ddr_1_mem_ba                       : out   std_logic_vector(2 downto 0);                     -- mem_ba
+			ddr_1_mem_ck                       : out   std_logic_vector(0 downto 0);                     -- mem_ck
+			ddr_1_mem_ck_n                     : out   std_logic_vector(0 downto 0);                     -- mem_ck_n
+			ddr_1_mem_cke                      : out   std_logic_vector(0 downto 0);                     -- mem_cke
+			ddr_1_mem_cs_n                     : out   std_logic_vector(0 downto 0);                     -- mem_cs_n
+			ddr_1_mem_dm                       : out   std_logic_vector(1 downto 0);                     -- mem_dm
+			ddr_1_mem_ras_n                    : out   std_logic_vector(0 downto 0);                     -- mem_ras_n
+			ddr_1_mem_cas_n                    : out   std_logic_vector(0 downto 0);                     -- mem_cas_n
+			ddr_1_mem_we_n                     : out   std_logic_vector(0 downto 0);                     -- mem_we_n
+			ddr_1_mem_reset_n                  : out   std_logic;                                        -- mem_reset_n
+			ddr_1_mem_dq                       : inout std_logic_vector(15 downto 0) := (others => 'X'); -- mem_dq
+			ddr_1_mem_dqs                      : inout std_logic_vector(1 downto 0)  := (others => 'X'); -- mem_dqs
+			ddr_1_mem_dqs_n                    : inout std_logic_vector(1 downto 0)  := (others => 'X'); -- mem_dqs_n
+			ddr_1_mem_odt                      : out   std_logic_vector(0 downto 0);                     -- mem_odt
+			ddr_clk_in_0_clk                   : in    std_logic                     := 'X';             -- clk
+			ddr_clk_in_1_clk                   : in    std_logic                     := 'X';             -- clk
+			ddr_global_reset_0_reset_n         : in    std_logic                     := 'X';             -- reset_n
+			ddr_global_reset_1_reset_n         : in    std_logic                     := 'X';             -- reset_n
+			ddr_oct_0_rzqin                    : in    std_logic                     := 'X';             -- rzqin
+			ddr_oct_1_rzqin                    : in    std_logic                     := 'X';             -- rzqin
+			ddr_soft_reset_0_reset_n           : in    std_logic                     := 'X';             -- reset_n
+			ddr_soft_reset_1_reset_n           : in    std_logic                     := 'X';             -- reset_n
+			ddr_status_0_local_init_done       : out   std_logic;                                        -- local_init_done
+			ddr_status_0_local_cal_success     : out   std_logic;                                        -- local_cal_success
+			ddr_status_0_local_cal_fail        : out   std_logic;                                        -- local_cal_fail
+			ddr_status_1_local_init_done       : out   std_logic;                                        -- local_init_done
+			ddr_status_1_local_cal_success     : out   std_logic;                                        -- local_cal_success
+			ddr_status_1_local_cal_fail        : out   std_logic;                                        -- local_cal_fail
+			dev_info_crc_in                    : in    std_logic_vector(31 downto 0) := (others => 'X'); -- crc_in
+			dev_info_mkio_address              : in    std_logic_vector(4 downto 0)  := (others => 'X'); -- mkio_address
+			discr_cmd_in_vwet                  : out   std_logic;                                        -- vwet
+			discr_cmd_in_ths_int               : out   std_logic;                                        -- ths_int
+			discr_cmd_in_ths_sel               : out   std_logic;                                        -- ths_sel
+			discr_cmd_in_sense                 : out   std_logic;                                        -- sense
+			discr_cmd_in_dc_in                 : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- dc_in
+			discr_cmd_in_addr                  : in    std_logic_vector(4 downto 0)  := (others => 'X'); -- addr
+			discr_cmd_out_fault                : in    std_logic_vector(3 downto 0)  := (others => 'X'); -- fault
+			discr_cmd_out_export               : out   std_logic_vector(3 downto 0);                     -- export
+			gp_gp_inputs                       : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- gp_inputs
+			gp_gp_outputs                      : out   std_logic_vector(7 downto 0);                     -- gp_outputs
+			i2c_clk                            : inout std_logic                     := 'X';             -- clk
+			i2c_data                           : inout std_logic                     := 'X';             -- data
+			pcie_npor_npor                     : in    std_logic                     := 'X';             -- npor
+			pcie_npor_pin_perst                : in    std_logic                     := 'X';             -- pin_perst
+			pcie_refclk_clk                    : in    std_logic                     := 'X';             -- clk
+			pcie_serial_rx_in0                 : in    std_logic                     := 'X';             -- rx_in0
+			pcie_serial_tx_out0                : out   std_logic;                                        -- tx_out0
+			por_reset_n                        : in    std_logic                     := 'X';             -- reset_n
+			pu_backlight_drv_en                : out   std_logic_vector(1 downto 0);                     -- drv_en
+			pu_backlight_out_en_n              : out   std_logic_vector(1 downto 0);                     -- out_en_n
+			pu_backlight_pwm                   : out   std_logic_vector(2 downto 0);                     -- pwm
+			pu_backlight_fault_n               : in    std_logic                     := 'X';             -- fault_n
+			pu_backlight_night                 : in    std_logic                     := 'X';             -- night
+			pu_backlight_backlight_bite        : in    std_logic                     := 'X';             -- backlight_bite
+			pu_i2c_clk                         : inout std_logic                     := 'X';             -- clk
+			pu_i2c_data                        : inout std_logic                     := 'X';             -- data
+			pu_type_pu_type                    : out   std_logic_vector(1 downto 0);                     -- pu_type
+			reset_out_reset_n                  : out   std_logic;                                        -- reset_n
+			reset_out_reset_req                : out   std_logic;                                        -- reset_req
+			video_av_in_0_vid_clk              : in    std_logic                     := 'X';             -- vid_clk
+			video_av_in_0_vid_data             : in    std_logic_vector(23 downto 0) := (others => 'X'); -- vid_data
+			video_av_in_0_vid_de               : in    std_logic                     := 'X';             -- vid_de
+			video_av_in_0_vid_datavalid        : in    std_logic                     := 'X';             -- vid_datavalid
+			video_av_in_0_vid_locked           : in    std_logic                     := 'X';             -- vid_locked
+			video_av_in_0_vid_f                : in    std_logic                     := 'X';             -- vid_f
+			video_av_in_0_vid_v_sync           : in    std_logic                     := 'X';             -- vid_v_sync
+			video_av_in_0_vid_h_sync           : in    std_logic                     := 'X';             -- vid_h_sync
+			video_av_in_0_vid_color_encoding   : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- vid_color_encoding
+			video_av_in_0_vid_bit_width        : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- vid_bit_width
+			video_av_in_0_sof                  : out   std_logic;                                        -- sof
+			video_av_in_0_sof_locked           : out   std_logic;                                        -- sof_locked
+			video_av_in_0_refclk_div           : out   std_logic;                                        -- refclk_div
+			video_av_in_0_clipping             : out   std_logic;                                        -- clipping
+			video_av_in_0_padding              : out   std_logic;                                        -- padding
+			video_av_in_0_overflow             : out   std_logic;                                        -- overflow
+			video_av_in_1_vid_clk              : in    std_logic                     := 'X';             -- vid_clk
+			video_av_in_1_vid_data             : in    std_logic_vector(23 downto 0) := (others => 'X'); -- vid_data
+			video_av_in_1_vid_de               : in    std_logic                     := 'X';             -- vid_de
+			video_av_in_1_vid_datavalid        : in    std_logic                     := 'X';             -- vid_datavalid
+			video_av_in_1_vid_locked           : in    std_logic                     := 'X';             -- vid_locked
+			video_av_in_1_vid_f                : in    std_logic                     := 'X';             -- vid_f
+			video_av_in_1_vid_v_sync           : in    std_logic                     := 'X';             -- vid_v_sync
+			video_av_in_1_vid_h_sync           : in    std_logic                     := 'X';             -- vid_h_sync
+			video_av_in_1_vid_color_encoding   : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- vid_color_encoding
+			video_av_in_1_vid_bit_width        : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- vid_bit_width
+			video_av_in_1_sof                  : out   std_logic;                                        -- sof
+			video_av_in_1_sof_locked           : out   std_logic;                                        -- sof_locked
+			video_av_in_1_refclk_div           : out   std_logic;                                        -- refclk_div
+			video_av_in_1_clipping             : out   std_logic;                                        -- clipping
+			video_av_in_1_padding              : out   std_logic;                                        -- padding
+			video_av_in_1_overflow             : out   std_logic;                                        -- overflow
+			video_av_out_vid_clk               : in    std_logic                     := 'X';             -- vid_clk
+			video_av_out_vid_data              : out   std_logic_vector(23 downto 0);                    -- vid_data
+			video_av_out_underflow             : out   std_logic;                                        -- underflow
+			video_av_out_vid_datavalid         : out   std_logic;                                        -- vid_datavalid
+			video_av_out_vid_v_sync            : out   std_logic;                                        -- vid_v_sync
+			video_av_out_vid_h_sync            : out   std_logic;                                        -- vid_h_sync
+			video_av_out_vid_f                 : out   std_logic;                                        -- vid_f
+			video_av_out_vid_h                 : out   std_logic;                                        -- vid_h
+			video_av_out_vid_v                 : out   std_logic;                                        -- vid_v
+			video_cpu_in_vid_clk               : in    std_logic                     := 'X';             -- vid_clk
+			video_cpu_in_vid_data              : in    std_logic_vector(31 downto 0) := (others => 'X'); -- vid_data
+			video_cpu_in_vid_de                : in    std_logic                     := 'X';             -- vid_de
+			video_cpu_in_vid_datavalid         : in    std_logic                     := 'X';             -- vid_datavalid
+			video_cpu_in_vid_locked            : in    std_logic                     := 'X';             -- vid_locked
+			video_cpu_in_vid_f                 : in    std_logic                     := 'X';             -- vid_f
+			video_cpu_in_vid_v_sync            : in    std_logic                     := 'X';             -- vid_v_sync
+			video_cpu_in_vid_h_sync            : in    std_logic                     := 'X';             -- vid_h_sync
+			video_cpu_in_vid_color_encoding    : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- vid_color_encoding
+			video_cpu_in_vid_bit_width         : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- vid_bit_width
+			video_cpu_in_sof                   : out   std_logic;                                        -- sof
+			video_cpu_in_sof_locked            : out   std_logic;                                        -- sof_locked
+			video_cpu_in_refclk_div            : out   std_logic;                                        -- refclk_div
+			video_cpu_in_clipping              : out   std_logic;                                        -- clipping
+			video_cpu_in_padding               : out   std_logic;                                        -- padding
+			video_cpu_in_overflow              : out   std_logic;                                        -- overflow
+			video_ic_outputs                   : out   std_logic_vector(7 downto 0);                     -- outputs
+			video_out_vid_clk                  : in    std_logic                     := 'X';             -- vid_clk
+			video_out_vid_data                 : out   std_logic_vector(23 downto 0);                    -- vid_data
+			video_out_underflow                : out   std_logic;                                        -- underflow
+			video_out_vid_mode_change          : out   std_logic;                                        -- vid_mode_change
+			video_out_vid_std                  : out   std_logic;                                        -- vid_std
+			video_out_vid_datavalid            : out   std_logic;                                        -- vid_datavalid
+			video_out_vid_v_sync               : out   std_logic;                                        -- vid_v_sync
+			video_out_vid_h_sync               : out   std_logic;                                        -- vid_h_sync
+			video_out_vid_f                    : out   std_logic;                                        -- vid_f
+			video_out_vid_h                    : out   std_logic;                                        -- vid_h
+			video_out_vid_v                    : out   std_logic;                                        -- vid_v
+			video_tmds_in_0_vid_clk            : in    std_logic                     := 'X';             -- vid_clk
+			video_tmds_in_0_vid_data           : in    std_logic_vector(47 downto 0) := (others => 'X'); -- vid_data
+			video_tmds_in_0_vid_de             : in    std_logic_vector(1 downto 0)  := (others => 'X'); -- vid_de
+			video_tmds_in_0_vid_datavalid      : in    std_logic                     := 'X';             -- vid_datavalid
+			video_tmds_in_0_vid_locked         : in    std_logic                     := 'X';             -- vid_locked
+			video_tmds_in_0_vid_f              : in    std_logic_vector(1 downto 0)  := (others => 'X'); -- vid_f
+			video_tmds_in_0_vid_v_sync         : in    std_logic_vector(1 downto 0)  := (others => 'X'); -- vid_v_sync
+			video_tmds_in_0_vid_h_sync         : in    std_logic_vector(1 downto 0)  := (others => 'X'); -- vid_h_sync
+			video_tmds_in_0_vid_color_encoding : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- vid_color_encoding
+			video_tmds_in_0_vid_bit_width      : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- vid_bit_width
+			video_tmds_in_0_sof                : out   std_logic;                                        -- sof
+			video_tmds_in_0_sof_locked         : out   std_logic;                                        -- sof_locked
+			video_tmds_in_0_refclk_div         : out   std_logic;                                        -- refclk_div
+			video_tmds_in_0_clipping           : out   std_logic;                                        -- clipping
+			video_tmds_in_0_padding            : out   std_logic;                                        -- padding
+			video_tmds_in_0_overflow           : out   std_logic;                                        -- overflow
+			video_tmds_in_1_vid_clk            : in    std_logic                     := 'X';             -- vid_clk
+			video_tmds_in_1_vid_data           : in    std_logic_vector(47 downto 0) := (others => 'X'); -- vid_data
+			video_tmds_in_1_vid_de             : in    std_logic_vector(1 downto 0)  := (others => 'X'); -- vid_de
+			video_tmds_in_1_vid_datavalid      : in    std_logic                     := 'X';             -- vid_datavalid
+			video_tmds_in_1_vid_locked         : in    std_logic                     := 'X';             -- vid_locked
+			video_tmds_in_1_vid_f              : in    std_logic_vector(1 downto 0)  := (others => 'X'); -- vid_f
+			video_tmds_in_1_vid_v_sync         : in    std_logic_vector(1 downto 0)  := (others => 'X'); -- vid_v_sync
+			video_tmds_in_1_vid_h_sync         : in    std_logic_vector(1 downto 0)  := (others => 'X'); -- vid_h_sync
+			video_tmds_in_1_vid_color_encoding : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- vid_color_encoding
+			video_tmds_in_1_vid_bit_width      : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- vid_bit_width
+			video_tmds_in_1_sof                : out   std_logic;                                        -- sof
+			video_tmds_in_1_sof_locked         : out   std_logic;                                        -- sof_locked
+			video_tmds_in_1_refclk_div         : out   std_logic;                                        -- refclk_div
+			video_tmds_in_1_clipping           : out   std_logic;                                        -- clipping
+			video_tmds_in_1_padding            : out   std_logic;                                        -- padding
+			video_tmds_in_1_overflow           : out   std_logic                                         -- overflow
+		);
+	end component qsys;
+

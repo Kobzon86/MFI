@@ -1,0 +1,681 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(lib2-mul.o)
+                              obj/default/main.o (__mulsi3)
+c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(adddf3.o)
+                              obj/default/main.o (__adddf3)
+c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(divdf3.o)
+                              obj/default/main.o (__divdf3)
+c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(floatsidf.o)
+                              obj/default/main.o (__floatsidf)
+c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(_clzsi2.o)
+                              c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(adddf3.o) (__clzsi2)
+c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(lib2-divmod.o)
+                              c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(divdf3.o) (__udivsi3)
+c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(_clz.o)
+                              c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(_clzsi2.o) (__clz_tab)
+../nios2_bsp/\libhal_bsp.a(alt_log_macro.o)
+                              ../nios2_bsp//obj/HAL/src/crt0.o (tx_log_str)
+../nios2_bsp/\libhal_bsp.a(alt_log_printf.o)
+                              ../nios2_bsp//obj/HAL/src/crt0.o (alt_log_boot_on_flag)
+../nios2_bsp/\libhal_bsp.a(alt_main.o)
+                              ../nios2_bsp//obj/HAL/src/crt0.o (alt_main)
+../nios2_bsp/\libhal_bsp.a(alt_tick.o)
+                              ../nios2_bsp/\libhal_bsp.a(alt_log_printf.o) (_alt_tick_rate)
+../nios2_bsp/\libhal_bsp.a(alt_usleep.o)
+                              obj/default/main.o (usleep)
+../nios2_bsp/\libhal_bsp.a(alt_sys_init.o)
+                              ../nios2_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
+../nios2_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+                              ../nios2_bsp/\libhal_bsp.a(alt_usleep.o) (alt_busy_sleep)
+../nios2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                              ../nios2_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_gen2_irq_init)
+c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strlen.o)
+                              ../nios2_bsp/\libhal_bsp.a(alt_log_printf.o) (strlen)
+c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strncpy.o)
+                              ../nios2_bsp/\libhal_bsp.a(alt_log_printf.o) (strncpy)
+
+Allocating common symbols
+Common symbol       size              file
+
+alt_log_write_buf   0x11              ../nios2_bsp/\libhal_bsp.a(alt_log_printf.o)
+alt_log_jtag_uart_alarm_1
+                    0x18              ../nios2_bsp/\libhal_bsp.a(alt_log_printf.o)
+alt_system_clock_in_sec
+                    0x4               ../nios2_bsp/\libhal_bsp.a(alt_log_printf.o)
+alt_log_sys_clk_count
+                    0x4               ../nios2_bsp/\libhal_bsp.a(alt_log_printf.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+shared_ram_0     0x0000000000000000 0x0000000000000200
+reset            0x0000000000008000 0x0000000000000020
+nios_ram_0       0x0000000000008020 0x0000000000007fe0
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD ../nios2_bsp//obj/HAL/src/crt0.o
+LOAD obj/default/main.o
+LOAD c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libstdc++.a
+LOAD c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libm.a
+LOAD c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a
+START GROUP
+LOAD c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a
+LOAD c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a
+LOAD ../nios2_bsp/\libhal_bsp.a
+LOAD c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libm.a
+END GROUP
+LOAD c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a
+                0x0000000000000000                __alt_mem_shared_ram_0 = 0x0
+                0x0000000000008000                __alt_mem_nios_ram_0 = 0x8000
+
+.entry          0x0000000000008000       0x20
+ *(.entry)
+ .entry         0x0000000000008000       0x20 ../nios2_bsp//obj/HAL/src/crt0.o
+                0x0000000000008000                __reset
+                0x000000000000800c                _exit
+
+.exceptions     0x0000000000008020        0x0
+                [!provide]                        PROVIDE (__ram_exceptions_start, ABSOLUTE (.))
+                0x0000000000008020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ *(.exceptions.entry.user)
+ *(.exceptions.entry.ecc_fatal)
+ *(.exceptions.entry)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ *(.exceptions.notirq.label)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ *(.exceptions.exit.label)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ *(.exceptions)
+                [!provide]                        PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
+                [!provide]                        PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
+
+.text           0x0000000000008020     0x49f0
+                [!provide]                        PROVIDE (stext, ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000008020       0xac ../nios2_bsp//obj/HAL/src/crt0.o
+                0x0000000000008020                _start
+ .text          0x00000000000080cc     0x2360 obj/default/main.o
+                0x00000000000080cc                i2c_read
+                0x0000000000008134                i2c_write
+                0x00000000000081f8                i2c_write_array
+                0x00000000000082b8                i2c_compare_array
+                0x00000000000083f8                gpio_get
+                0x0000000000008438                gpio_set
+                0x0000000000008474                gpio_clear
+                0x00000000000084b0                get_hdmi_clk
+                0x0000000000008560                get_adv_info
+                0x00000000000088a8                reset_flash_adv7613
+                0x00000000000089d0                init_clp
+                0x0000000000008a0c                set_rectangle
+                0x0000000000008a74                init_cvi
+                0x0000000000008ab0                set_scaler
+                0x0000000000008b0c                set_layer_cfg
+                0x0000000000008be8                set_mixer_background
+                0x0000000000008c44                init_mixer
+                0x0000000000008d10                set_switch
+                0x0000000000008d78                get_status
+                0x0000000000008db0                init_switch
+                0x0000000000008de8                set_CVO_1024
+                0x0000000000008f28                update_switch
+                0x0000000000008f94                set_CVO_1920
+                0x00000000000090dc                init_cvo
+                0x000000000000913c                main
+ .text          0x000000000000a42c       0x28 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(lib2-mul.o)
+                0x000000000000a42c                __mulsi3
+ .text          0x000000000000a454      0x8b4 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(adddf3.o)
+                0x000000000000a454                __adddf3
+ .text          0x000000000000ad08      0x9d8 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(divdf3.o)
+                0x000000000000ad08                __divdf3
+ .text          0x000000000000b6e0       0xe4 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(floatsidf.o)
+                0x000000000000b6e0                __floatsidf
+ .text          0x000000000000b7c4       0x64 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(_clzsi2.o)
+                0x000000000000b7c4                __clzsi2
+ .text          0x000000000000b828      0x1b4 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(lib2-divmod.o)
+                0x000000000000b828                __divsi3
+                0x000000000000b8ac                __modsi3
+                0x000000000000b920                __udivsi3
+                0x000000000000b984                __umodsi3
+ .text          0x000000000000b9dc        0x0 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(_clz.o)
+ .text          0x000000000000b9dc       0x34 ../nios2_bsp/\libhal_bsp.a(alt_log_macro.o)
+                0x000000000000b9dc                tx_log_str
+ .text          0x000000000000ba10      0xaac ../nios2_bsp/\libhal_bsp.a(alt_log_printf.o)
+                0x000000000000ba10                alt_log_txchar
+                0x000000000000ba64                alt_log_repchar
+                0x000000000000bacc                alt_log_private_printf
+                0x000000000000c094                alt_log_printf_proc
+                0x000000000000c0f4                altera_avalon_jtag_uart_report_log
+                0x000000000000c174                alt_log_jtag_uart_print_control_reg
+                0x000000000000c250                alt_log_jtag_uart_startup_info
+                0x000000000000c2a4                alt_log_jtag_uart_isr_proc
+                0x000000000000c308                alt_log_write
+                0x000000000000c448                alt_log_system_clock
+ .text          0x000000000000c4bc      0x104 ../nios2_bsp/\libhal_bsp.a(alt_main.o)
+                0x000000000000c4bc                alt_main
+ .text          0x000000000000c5c0      0x1b4 ../nios2_bsp/\libhal_bsp.a(alt_tick.o)
+                0x000000000000c5c0                alt_alarm_stop
+                0x000000000000c664                alt_tick
+ .text          0x000000000000c774       0x38 ../nios2_bsp/\libhal_bsp.a(alt_usleep.o)
+                0x000000000000c774                usleep
+ .text          0x000000000000c7ac       0x68 ../nios2_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x000000000000c7ac                alt_irq_init
+                0x000000000000c7ec                alt_sys_init
+ .text          0x000000000000c814      0x160 ../nios2_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+                0x000000000000c814                alt_busy_sleep
+ .text          0x000000000000c974       0x2c ../nios2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                0x000000000000c974                altera_nios2_gen2_irq_init
+ .text          0x000000000000c9a0        0x0 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strlen.o)
+ .text.strlen   0x000000000000c9a0       0x1c c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strlen.o)
+                0x000000000000c9a0                strlen
+ .text          0x000000000000c9bc        0x0 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strncpy.o)
+ .text.strncpy  0x000000000000c9bc       0x54 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strncpy.o)
+                0x000000000000c9bc                strncpy
+ *(.gnu.warning.*)
+ *(.fini)
+                [!provide]                        PROVIDE (__etext, ABSOLUTE (.))
+                [!provide]                        PROVIDE (_etext, ABSOLUTE (.))
+                [!provide]                        PROVIDE (etext, ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x000000000000ca10                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__preinit_array_start, ABSOLUTE (.))
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end, ABSOLUTE (.))
+                [!provide]                        PROVIDE (__init_array_start, ABSOLUTE (.))
+ *(.init_array)
+                [!provide]                        PROVIDE (__init_array_end, ABSOLUTE (.))
+                [!provide]                        PROVIDE (__fini_array_start, ABSOLUTE (.))
+ *(.fini_array)
+                [!provide]                        PROVIDE (__fini_array_end, ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table .gcc_except_table.*)
+ *(.dynamic)
+                [!provide]                        PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
+ *(.ctors)
+ *(SORT(.ctors.*))
+                [!provide]                        PROVIDE (__CTOR_END__, ABSOLUTE (.))
+                [!provide]                        PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
+ *(.dtors)
+ *(SORT(.dtors.*))
+                [!provide]                        PROVIDE (__DTOR_END__, ABSOLUTE (.))
+ *(.jcr)
+                0x000000000000ca10                . = ALIGN (0x4)
+
+.rodata         0x000000000000ca10      0x7b4
+                [!provide]                        PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x000000000000ca10                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x000000000000ca10      0x4e0 obj/default/main.o
+                0x000000000000ca10                si5332_fhd_registers
+                0x000000000000cae2                si5332_xga_registers
+                0x000000000000cb8d                si5332_vga_registers
+                0x000000000000cc38                tmds171_registers
+                0x000000000000cc50                adv7613_registers
+                0x000000000000ce84                adv7181_registers
+ .rodata        0x000000000000cef0      0x100 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(_clz.o)
+                0x000000000000cef0                __clz_tab
+ .rodata        0x000000000000cff0       0x89 ../nios2_bsp/\libhal_bsp.a(alt_log_printf.o)
+ *fill*         0x000000000000d079        0x3 
+ .rodata        0x000000000000d07c      0x148 ../nios2_bsp/\libhal_bsp.a(alt_main.o)
+ *(.rodata1)
+                0x000000000000d1c4                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                [!provide]                        PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+
+.rwdata         0x000000000000d1c4       0xe0
+                [!provide]                        PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x000000000000d1c4                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x000000000000d1c4        0x0 ../nios2_bsp//obj/HAL/src/crt0.o
+ .data          0x000000000000d1c4        0x0 obj/default/main.o
+ .data          0x000000000000d1c4        0x0 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(lib2-mul.o)
+ .data          0x000000000000d1c4        0x0 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(adddf3.o)
+ .data          0x000000000000d1c4        0x0 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(divdf3.o)
+ .data          0x000000000000d1c4        0x0 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(floatsidf.o)
+ .data          0x000000000000d1c4        0x0 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(_clzsi2.o)
+ .data          0x000000000000d1c4        0x0 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(lib2-divmod.o)
+ .data          0x000000000000d1c4        0x0 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(_clz.o)
+ .data          0x000000000000d1c4        0x0 ../nios2_bsp/\libhal_bsp.a(alt_log_macro.o)
+ .data          0x000000000000d1c4       0x9a ../nios2_bsp/\libhal_bsp.a(alt_log_printf.o)
+                0x000000000000d1c4                alt_log_msg_bss
+                0x000000000000d1e0                alt_log_msg_alt_main
+                0x000000000000d200                alt_log_msg_stackpointer
+                0x000000000000d234                alt_log_msg_cache
+ .data          0x000000000000d25e        0x0 ../nios2_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x000000000000d25e        0x0 ../nios2_bsp/\libhal_bsp.a(alt_tick.o)
+ .data          0x000000000000d25e        0x0 ../nios2_bsp/\libhal_bsp.a(alt_usleep.o)
+ .data          0x000000000000d25e        0x0 ../nios2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x000000000000d25e        0x0 ../nios2_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .data          0x000000000000d25e        0x0 ../nios2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .data          0x000000000000d25e        0x0 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strlen.o)
+ .data          0x000000000000d25e        0x0 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strncpy.o)
+                0x000000000001525e                _gp = ABSOLUTE ((. + 0x8000))
+                [!provide]                        PROVIDE (gp, _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ *fill*         0x000000000000d25e        0x2 
+ .sdata         0x000000000000d260        0x4 ../nios2_bsp//obj/HAL/src/crt0.o
+                0x000000000000d260                alt_stack_limit_value
+ .sdata         0x000000000000d264       0x30 obj/default/main.o
+                0x000000000000d264                cvi0
+                0x000000000000d268                cvi1
+                0x000000000000d26c                cvi2
+                0x000000000000d270                cvi3
+                0x000000000000d274                cvi4
+                0x000000000000d278                sw0
+                0x000000000000d27c                clp0
+                0x000000000000d280                clp1
+                0x000000000000d284                sc0
+                0x000000000000d288                sc1
+                0x000000000000d28c                mix0
+                0x000000000000d290                cvo0
+ .sdata         0x000000000000d294        0x6 ../nios2_bsp/\libhal_bsp.a(alt_log_printf.o)
+                0x000000000000d294                alt_log_boot_on_flag
+                0x000000000000d298                alt_log_sys_clk_on_flag
+                0x000000000000d299                alt_log_jtag_uart_startup_info_on_flag
+ *fill*         0x000000000000d29a        0x2 
+ .sdata         0x000000000000d29c        0x8 ../nios2_bsp/\libhal_bsp.a(alt_tick.o)
+                0x000000000000d29c                alt_alarm_list
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x000000000000d2a4                . = ALIGN (0x4)
+                0x000000000000d2a4                _edata = ABSOLUTE (.)
+                [!provide]                        PROVIDE (edata, ABSOLUTE (.))
+                [!provide]                        PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                [!provide]                        PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+
+.bss            0x000000000000d2a4       0x58
+                0x000000000000d2a4                __bss_start = ABSOLUTE (.)
+                [!provide]                        PROVIDE (__sbss_start, ABSOLUTE (.))
+                [!provide]                        PROVIDE (___sbss_start, ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x000000000000d2a4        0xc obj/default/main.o
+                0x000000000000d2a4                shared_ram0
+ .sbss          0x000000000000d2b0        0x3 ../nios2_bsp/\libhal_bsp.a(alt_log_printf.o)
+                0x000000000000d2b0                alt_log_write_on_flag
+                0x000000000000d2b1                alt_log_jtag_uart_alarm_on_flag
+                0x000000000000d2b2                alt_log_jtag_uart_isr_on_flag
+ *fill*         0x000000000000d2b3        0x1 
+ .sbss          0x000000000000d2b4        0x8 ../nios2_bsp/\libhal_bsp.a(alt_log_printf.o)
+                0x000000000000d2b4                alt_system_clock_in_sec
+                0x000000000000d2b8                alt_log_sys_clk_count
+ .sbss          0x000000000000d2bc        0xc ../nios2_bsp/\libhal_bsp.a(alt_main.o)
+                0x000000000000d2bc                alt_argc
+                0x000000000000d2c0                alt_argv
+                0x000000000000d2c4                alt_envp
+ .sbss          0x000000000000d2c8        0x8 ../nios2_bsp/\libhal_bsp.a(alt_tick.o)
+                0x000000000000d2c8                _alt_tick_rate
+                0x000000000000d2cc                _alt_nticks
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                [!provide]                        PROVIDE (__sbss_end, ABSOLUTE (.))
+                [!provide]                        PROVIDE (___sbss_end, ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x000000000000d2d0        0x0 ../nios2_bsp//obj/HAL/src/crt0.o
+ .bss           0x000000000000d2d0        0x0 obj/default/main.o
+ .bss           0x000000000000d2d0        0x0 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(lib2-mul.o)
+ .bss           0x000000000000d2d0        0x0 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(adddf3.o)
+ .bss           0x000000000000d2d0        0x0 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(divdf3.o)
+ .bss           0x000000000000d2d0        0x0 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(floatsidf.o)
+ .bss           0x000000000000d2d0        0x0 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(_clzsi2.o)
+ .bss           0x000000000000d2d0        0x0 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(lib2-divmod.o)
+ .bss           0x000000000000d2d0        0x0 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(_clz.o)
+ .bss           0x000000000000d2d0        0x0 ../nios2_bsp/\libhal_bsp.a(alt_log_macro.o)
+ .bss           0x000000000000d2d0        0x0 ../nios2_bsp/\libhal_bsp.a(alt_log_printf.o)
+ .bss           0x000000000000d2d0        0x0 ../nios2_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x000000000000d2d0        0x0 ../nios2_bsp/\libhal_bsp.a(alt_tick.o)
+ .bss           0x000000000000d2d0        0x0 ../nios2_bsp/\libhal_bsp.a(alt_usleep.o)
+ .bss           0x000000000000d2d0        0x0 ../nios2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x000000000000d2d0        0x0 ../nios2_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .bss           0x000000000000d2d0        0x0 ../nios2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .bss           0x000000000000d2d0        0x0 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strlen.o)
+ .bss           0x000000000000d2d0        0x0 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strncpy.o)
+ *(COMMON)
+ COMMON         0x000000000000d2d0       0x2c ../nios2_bsp/\libhal_bsp.a(alt_log_printf.o)
+                0x000000000000d2d0                alt_log_write_buf
+                0x000000000000d2e4                alt_log_jtag_uart_alarm_1
+                0x000000000000d2fc                . = ALIGN (0x4)
+                0x000000000000d2fc                __bss_end = ABSOLUTE (.)
+
+.shared_ram_0   0x0000000000000000        0x0
+                [!provide]                        PROVIDE (_alt_partition_shared_ram_0_start, ABSOLUTE (.))
+ *(.shared_ram_0 .shared_ram_0. shared_ram_0.*)
+                0x0000000000000000                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (_alt_partition_shared_ram_0_end, ABSOLUTE (.))
+                [!provide]                        PROVIDE (_alt_partition_shared_ram_0_load_addr, LOADADDR (.shared_ram_0))
+
+.nios_ram_0     0x000000000000d2fc        0x0
+                [!provide]                        PROVIDE (_alt_partition_nios_ram_0_start, ABSOLUTE (.))
+ *(.nios_ram_0 .nios_ram_0. nios_ram_0.*)
+                0x000000000000d2fc                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (_alt_partition_nios_ram_0_end, ABSOLUTE (.))
+                0x000000000000d2fc                _end = ABSOLUTE (.)
+                0x000000000000d2fc                end = ABSOLUTE (.)
+                0x000000000000d2fc                __alt_stack_base = ABSOLUTE (.)
+                [!provide]                        PROVIDE (_alt_partition_nios_ram_0_load_addr, LOADADDR (.nios_ram_0))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x23
+ *(.comment)
+ .comment       0x0000000000000000       0x23 obj/default/main.o
+                                         0x24 (size before relaxing)
+ .comment       0x0000000000000023       0x24 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(lib2-mul.o)
+ .comment       0x0000000000000023       0x24 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(adddf3.o)
+ .comment       0x0000000000000023       0x24 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(divdf3.o)
+ .comment       0x0000000000000023       0x24 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(floatsidf.o)
+ .comment       0x0000000000000023       0x24 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(_clzsi2.o)
+ .comment       0x0000000000000023       0x24 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(lib2-divmod.o)
+ .comment       0x0000000000000023       0x24 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(_clz.o)
+ .comment       0x0000000000000023       0x24 ../nios2_bsp/\libhal_bsp.a(alt_log_printf.o)
+ .comment       0x0000000000000023       0x24 ../nios2_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x0000000000000023       0x24 ../nios2_bsp/\libhal_bsp.a(alt_tick.o)
+ .comment       0x0000000000000023       0x24 ../nios2_bsp/\libhal_bsp.a(alt_usleep.o)
+ .comment       0x0000000000000023       0x24 ../nios2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x0000000000000023       0x24 ../nios2_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .comment       0x0000000000000023       0x24 ../nios2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .comment       0x0000000000000023       0x24 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strlen.o)
+ .comment       0x0000000000000023       0x24 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strncpy.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x260
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x28 ../nios2_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x0000000000000028       0x20 obj/default/main.o
+ .debug_aranges
+                0x0000000000000048       0x20 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(lib2-mul.o)
+ .debug_aranges
+                0x0000000000000068       0x20 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(adddf3.o)
+ .debug_aranges
+                0x0000000000000088       0x20 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(divdf3.o)
+ .debug_aranges
+                0x00000000000000a8       0x20 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(floatsidf.o)
+ .debug_aranges
+                0x00000000000000c8       0x20 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(_clzsi2.o)
+ .debug_aranges
+                0x00000000000000e8       0x20 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(lib2-divmod.o)
+ .debug_aranges
+                0x0000000000000108       0x18 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(_clz.o)
+ .debug_aranges
+                0x0000000000000120       0x20 ../nios2_bsp/\libhal_bsp.a(alt_log_macro.o)
+ .debug_aranges
+                0x0000000000000140       0x20 ../nios2_bsp/\libhal_bsp.a(alt_log_printf.o)
+ .debug_aranges
+                0x0000000000000160       0x20 ../nios2_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x0000000000000180       0x20 ../nios2_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_aranges
+                0x00000000000001a0       0x20 ../nios2_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_aranges
+                0x00000000000001c0       0x20 ../nios2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x00000000000001e0       0x20 ../nios2_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_aranges
+                0x0000000000000200       0x20 ../nios2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_aranges
+                0x0000000000000220       0x20 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strlen.o)
+ .debug_aranges
+                0x0000000000000240       0x20 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strncpy.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x36ff
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000       0x6d ../nios2_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x000000000000006d     0x1426 obj/default/main.o
+ .debug_info    0x0000000000001493       0xb4 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(lib2-mul.o)
+ .debug_info    0x0000000000001547      0x4a2 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(adddf3.o)
+ .debug_info    0x00000000000019e9      0x5bf c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(divdf3.o)
+ .debug_info    0x0000000000001fa8      0x1bc c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(floatsidf.o)
+ .debug_info    0x0000000000002164      0x124 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(_clzsi2.o)
+ .debug_info    0x0000000000002288      0x2c6 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(lib2-divmod.o)
+ .debug_info    0x000000000000254e       0xb2 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(_clz.o)
+ .debug_info    0x0000000000002600       0x7a ../nios2_bsp/\libhal_bsp.a(alt_log_macro.o)
+ .debug_info    0x000000000000267a      0x763 ../nios2_bsp/\libhal_bsp.a(alt_log_printf.o)
+ .debug_info    0x0000000000002ddd      0x165 ../nios2_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x0000000000002f42      0x2af ../nios2_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_info    0x00000000000031f1       0xb0 ../nios2_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_info    0x00000000000032a1       0xfa ../nios2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x000000000000339b       0xd7 ../nios2_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_info    0x0000000000003472       0xb8 ../nios2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_info    0x000000000000352a       0xc9 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strlen.o)
+ .debug_info    0x00000000000035f3      0x10c c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strncpy.o)
+
+.debug_abbrev   0x0000000000000000      0xfcd
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0x12 ../nios2_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x0000000000000012      0x242 obj/default/main.o
+ .debug_abbrev  0x0000000000000254       0x6f c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(lib2-mul.o)
+ .debug_abbrev  0x00000000000002c3      0x13a c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(adddf3.o)
+ .debug_abbrev  0x00000000000003fd      0x12d c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(divdf3.o)
+ .debug_abbrev  0x000000000000052a      0x124 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(floatsidf.o)
+ .debug_abbrev  0x000000000000064e       0xbe c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(_clzsi2.o)
+ .debug_abbrev  0x000000000000070c      0x10e c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(lib2-divmod.o)
+ .debug_abbrev  0x000000000000081a       0x5d c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(_clz.o)
+ .debug_abbrev  0x0000000000000877       0x14 ../nios2_bsp/\libhal_bsp.a(alt_log_macro.o)
+ .debug_abbrev  0x000000000000088b      0x21f ../nios2_bsp/\libhal_bsp.a(alt_log_printf.o)
+ .debug_abbrev  0x0000000000000aaa       0xb0 ../nios2_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x0000000000000b5a      0x16b ../nios2_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_abbrev  0x0000000000000cc5       0x60 ../nios2_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_abbrev  0x0000000000000d25       0xbc ../nios2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x0000000000000de1       0x7e ../nios2_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_abbrev  0x0000000000000e5f       0x67 ../nios2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_abbrev  0x0000000000000ec6       0x7f c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strlen.o)
+ .debug_abbrev  0x0000000000000f45       0x88 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strncpy.o)
+
+.debug_line     0x0000000000000000     0x1a88
+ *(.debug_line)
+ .debug_line    0x0000000000000000       0x6c ../nios2_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x000000000000006c      0x628 obj/default/main.o
+ .debug_line    0x0000000000000694       0x83 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(lib2-mul.o)
+ .debug_line    0x0000000000000717      0x381 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(adddf3.o)
+ .debug_line    0x0000000000000a98      0x2b3 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(divdf3.o)
+ .debug_line    0x0000000000000d4b       0xa6 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(floatsidf.o)
+ .debug_line    0x0000000000000df1       0xc3 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(_clzsi2.o)
+ .debug_line    0x0000000000000eb4      0x108 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(lib2-divmod.o)
+ .debug_line    0x0000000000000fbc       0x59 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(_clz.o)
+ .debug_line    0x0000000000001015       0x53 ../nios2_bsp/\libhal_bsp.a(alt_log_macro.o)
+ .debug_line    0x0000000000001068      0x2a4 ../nios2_bsp/\libhal_bsp.a(alt_log_printf.o)
+ .debug_line    0x000000000000130c      0x120 ../nios2_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x000000000000142c      0x115 ../nios2_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_line    0x0000000000001541       0xa8 ../nios2_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_line    0x00000000000015e9       0xa8 ../nios2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x0000000000001691       0xa2 ../nios2_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_line    0x0000000000001733       0x8e ../nios2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_line    0x00000000000017c1      0x15f c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strlen.o)
+ .debug_line    0x0000000000001920      0x168 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strncpy.o)
+
+.debug_frame    0x0000000000000000      0x890
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000      0x3b8 obj/default/main.o
+ .debug_frame   0x00000000000003b8       0x20 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(lib2-mul.o)
+ .debug_frame   0x00000000000003d8       0x40 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(adddf3.o)
+ .debug_frame   0x0000000000000418       0x58 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(divdf3.o)
+ .debug_frame   0x0000000000000470       0x38 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(floatsidf.o)
+ .debug_frame   0x00000000000004a8       0x20 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(_clzsi2.o)
+ .debug_frame   0x00000000000004c8       0x50 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(lib2-divmod.o)
+ .debug_frame   0x0000000000000518      0x1a4 ../nios2_bsp/\libhal_bsp.a(alt_log_printf.o)
+ .debug_frame   0x00000000000006bc       0x38 ../nios2_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x00000000000006f4       0x5c ../nios2_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_frame   0x0000000000000750       0x38 ../nios2_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_frame   0x0000000000000788       0x5c ../nios2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x00000000000007e4       0x38 ../nios2_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_frame   0x000000000000081c       0x34 ../nios2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_frame   0x0000000000000850       0x20 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strlen.o)
+ .debug_frame   0x0000000000000870       0x20 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strncpy.o)
+
+.debug_str      0x0000000000000000     0x189d
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0xb60 obj/default/main.o
+                                        0xc2a (size before relaxing)
+ .debug_str     0x0000000000000b60      0x17e c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(lib2-mul.o)
+                                        0x1c9 (size before relaxing)
+ .debug_str     0x0000000000000cde      0x12b c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(adddf3.o)
+                                        0x2df (size before relaxing)
+ .debug_str     0x0000000000000e09      0x16f c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(divdf3.o)
+                                        0x397 (size before relaxing)
+ .debug_str     0x0000000000000f78       0x6f c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(floatsidf.o)
+                                        0x278 (size before relaxing)
+ .debug_str     0x0000000000000fe7       0x69 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(_clzsi2.o)
+                                        0x236 (size before relaxing)
+ .debug_str     0x0000000000001050       0x82 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(lib2-divmod.o)
+                                        0x208 (size before relaxing)
+ .debug_str     0x00000000000010d2      0x219 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(_clz.o)
+ .debug_str     0x00000000000010d2      0x3ff ../nios2_bsp/\libhal_bsp.a(alt_log_printf.o)
+                                        0x59f (size before relaxing)
+ .debug_str     0x00000000000014d1       0x5c ../nios2_bsp/\libhal_bsp.a(alt_main.o)
+                                        0x208 (size before relaxing)
+ .debug_str     0x000000000000152d       0x96 ../nios2_bsp/\libhal_bsp.a(alt_tick.o)
+                                        0x28c (size before relaxing)
+ .debug_str     0x00000000000015c3       0x27 ../nios2_bsp/\libhal_bsp.a(alt_usleep.o)
+                                        0x161 (size before relaxing)
+ .debug_str     0x00000000000015ea       0x47 ../nios2_bsp/\libhal_bsp.a(alt_sys_init.o)
+                                        0x1af (size before relaxing)
+ .debug_str     0x0000000000001631       0x42 ../nios2_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+                                        0x184 (size before relaxing)
+ .debug_str     0x0000000000001673       0x3b ../nios2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                                        0x19e (size before relaxing)
+ .debug_str     0x00000000000016ae      0x190 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strlen.o)
+                                        0x235 (size before relaxing)
+ .debug_str     0x000000000000183e       0x5f c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strncpy.o)
+                                        0x24d (size before relaxing)
+
+.debug_loc      0x0000000000000000     0x3ba9
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000       0x93 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(lib2-mul.o)
+ .debug_loc     0x0000000000000093     0x16ee c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(adddf3.o)
+ .debug_loc     0x0000000000001781     0x1c20 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(divdf3.o)
+ .debug_loc     0x00000000000033a1      0x175 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(floatsidf.o)
+ .debug_loc     0x0000000000003516       0x6b c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(_clzsi2.o)
+ .debug_loc     0x0000000000003581      0x4ce c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(lib2-divmod.o)
+ .debug_loc     0x0000000000003a4f       0x1e c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strlen.o)
+ .debug_loc     0x0000000000003a6d      0x13c c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strncpy.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x0000000000000000       0x40
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x0000000000000000       0x10 ../nios2_bsp//obj/HAL/src/crt0.o
+ .debug_alt_sim_info
+                0x0000000000000010       0x30 ../nios2_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+                0x0000000000010000                __alt_data_end = 0x10000
+                0x0000000000010000                PROVIDE (__alt_stack_pointer, __alt_data_end)
+                0x000000000000d2fc                PROVIDE (__alt_stack_limit, __alt_stack_base)
+                [!provide]                        PROVIDE (__alt_heap_start, end)
+                [!provide]                        PROVIDE (__alt_heap_limit, 0x10000)
+OUTPUT(nios2.elf elf32-littlenios2)
+
+.debug_ranges   0x0000000000000000      0x470
+ .debug_ranges  0x0000000000000000       0x20 ../nios2_bsp//obj/HAL/src/crt0.o
+ .debug_ranges  0x0000000000000020      0x240 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(adddf3.o)
+ .debug_ranges  0x0000000000000260      0x158 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(divdf3.o)
+ .debug_ranges  0x00000000000003b8       0x20 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(floatsidf.o)
+ .debug_ranges  0x00000000000003d8       0x18 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(_clzsi2.o)
+ .debug_ranges  0x00000000000003f0       0x60 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul/fstack-limit-register-et\libgcc.a(lib2-divmod.o)
+ .debug_ranges  0x0000000000000450       0x10 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strlen.o)
+ .debug_ranges  0x0000000000000460       0x10 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul/fstack-limit-register-et\libsmallc.a(lib_a-strncpy.o)

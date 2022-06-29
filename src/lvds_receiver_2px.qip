@@ -1,0 +1,5 @@
+set_instance_assignment -name PLL_COMPENSATION_MODE DIRECT -to "*lvds_receiver_2px*|altera_pll:lvds_sdr_cyclone_v_pll_i*|*"
+# set_instance_assignment -name UNFORCE_MERGE_PLL_OUTPUT_COUNTER ON -to "*lvds_receiver_2px*|altera_pll:lvds_sdr_cyclone_v_pll_i*|*"
+
+set_global_assignment -library "lvds_receiver" -name SDC_FILE [file join $::quartus(qip_path) "lvds_receiver_2px.sdc"]
+set_global_assignment -library "lvds_receiver" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "lvds_receiver_2px.sv"]
